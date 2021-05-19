@@ -25,7 +25,7 @@
 
     <!-- Header -->
     <header class="l-header" id="header">           <!--scroll-header from class removed for now-->
-        <nav class="nav bd-container">
+        <nav class="nav rd-container">
             <a href="#" class="nav__logo">Raynal D'cunha</a>
 
             <div class="nav__menu" id="nav-menu">
@@ -48,7 +48,7 @@
     <main class="l-main">
         <!-- Home -->
         <section class="home" id="home">
-            <div class="home__container bd-container bd-grid">
+            <div class="home__container rd-container rd-grid">
                 <div class="home__data">
                     <span class="home__greeting">Hello, My name is</span>
                     <h1 class="home__name">Raynal D'cunha</h1>
@@ -69,12 +69,12 @@
         </section>
 
         <!-- About -->
-        <section class="about section bd-container" id="about">
+        <section class="about section rd-container" id="about">
             <span class="section-subtitle">My History</span>
             <h2 class="section-title">About Me</h2>
 
-            <div class="about__container bd-grid">
-                <div class="about__data bd-grid">
+            <div class="about__container rd-grid">
+                <div class="about__data rd-grid">
                     <p class="about__description">
                         <span>Hello, I am <br></span>
                         A Core Java Fresher, Looking for a job!
@@ -101,18 +101,18 @@
         </section>
 
         <!-- Qualification -->
-        <section class="qualification section bd-container">
+        <section class="qualification section rd-container">
             <span class="section-subtitle">Experience and Education</span>
             <h2 class="section-title">Qualification</h2>
 
-            <div class="qualification__container bd-grid">
+            <div class="qualification__container rd-grid">
                 <div class="qualification__content">
                     <h2 class="qualification__title">
                         <i class='bx bx-briefcase-alt qualification__title-icon' ></i>
                         Work Experience
                     </h2>
 
-                    <div class="bd-grid">
+                    <div class="rd-grid">
                         <div class="qualification__data">
                             <h3 class="qualification__area">Fresher</h3>
 
@@ -132,7 +132,7 @@
                         Education
                     </h2>
 
-                    <div class="bd-grid">
+                    <div class="rd-grid">
                         <div class="qualification__data">
                             <h3 class="qualification__area">Bachelor in Computer Science</h3>
 
@@ -187,11 +187,11 @@
         </section>
 
         <!-- Services -->
-        <section class="services section bd-container" id="services">
+        <section class="services section rd-container" id="services">
             <span class="section-subtitle">Want to work on a Project together?</span>
             <h2 class="section-title">Collaboration</h2>
 
-            <div class="services__container bd-grid">
+            <div class="services__container rd-grid">
                 <div class="services__data">
                     <i class="bx bx-palette services__icon"></i>
                     <h3 class="services__title">Java</h3>
@@ -216,8 +216,8 @@
         </section>
 
         <!-- Project in Mind -->
-        <section class="project section bd-container">
-            <div class="project__container bd-grid">
+        <section class="project section rd-container">
+            <div class="project__container rd-grid">
                 <div class="project__data">
                     <i class="bx bx-chat project__icon"></i>
 
@@ -234,7 +234,7 @@
         </section>
 
         <!-- Portfolio -->
-        <section class="portfolio section bd-container" id="portfolio">
+        <section class="portfolio section rd-container" id="portfolio">
             <span class="section-subtitle">My recent works</span>
             <h2 class="section-title">Portfolio</h2>
 
@@ -247,7 +247,7 @@
                 <span class="portfolio__item" data-filter=".web">Web-Development</span>
             </div>
 
-            <div class="portfolio__container bd-grid">
+            <div class="portfolio__container rd-grid">
                 <div class="portfolio__content mix recommended swing">
                     <img src="https://media.giphy.com/media/pOZhmE42D1WrCWATLK/giphy.gif" class="portfolio__img"></img> <!--changed a tag to img tag, href to src-->
                     <div class="portfolio__data">
@@ -305,7 +305,7 @@
         </section>
 
         <!-- Testimonials -->
-        <section class="testimonial section bd-container">
+        <section class="testimonial section rd-container">
             <span class="section-subtitle">What Clients Say</span>
             <h2 class="section-title">Testimonial</h2>
 
@@ -338,12 +338,12 @@
         </section>
 
         <!-- Contact Me -->
-        <section class="contact section bd-container" id="contact">
+        <section class="contact section rd-container" id="contact">
             <span class="section-subtitle">For Project Collaboration / Hiring</span>
             <h2 class="section-title">Contact Me</h2>
 
-            <div class="contact__container bd-grid">
-                <div class="contact__content bd-grid">
+            <div class="contact__container rd-grid">
+                <div class="contact__content rd-grid">
                     <div class="contact__box">
                         <i class='bx bxs-face contact__icon'></i>
                         <h3 class="contact__title">Name</h3>
@@ -357,48 +357,64 @@
                     </div>
 
                     <div class="contact__box">
-                        <i class="bx bx-envelope contact__icon"></i>
-                        <h3 class="contact__title">Gmail</h3>
-                        <span class="contact__description">dcunha.raynal4@gmail.com</span>
+                        <i class='bx bx-phone contact__icon'></i>
+                        <h3 class="contact__title">Phone</h3>
+                        <span class="contact__description">+91-9702062655</span>
                     </div>
 
                     <div class="contact__box">
-                        <i class="bx bxl-github contact__icon"></i>
-                        <h3 class="contact__title">Github</h3>
-                        <span class="contact__description">04xRaynal</span>
+                        <i class="bx bx-envelope contact__icon"></i>
+                        <h3 class="contact__title">Gmail</h3>
+                        <span class="contact__description">dcunha.raynal4<wbr>@gmail.com</span>
                     </div>
                 </div>
 
-                <form action="" class="contact__form">
+                <form action="https://formsubmit.co/dcunha.raynal4@gmail.com" method="POST" class="contact__form">
                     <div class="contact__inputs">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="email" placeholder="Email" class="contact__input">
+                        <input type="text" name="name" placeholder="Name" class="contact__input">
+                        <input type="email" name="email" placeholder="Email" class="contact__input">
                     </div>
 
                     <div class="contact__inputs">
-                        <input type="text" placeholder="Organization" class="contact__input">
-                        <input type="number" placeholder="Number" class="contact__input">
+                        <input type="text" name="organization" placeholder="Organization" class="contact__input">
+                        <input type="number" name="number" placeholder="Number" class="contact__input">
                     </div>
 
-                    <textarea name="" id="" cols="0" rows="7" placeholder="Message" class="contact__input"></textarea>
+                    <textarea name="message" id="" cols="0" rows="7" placeholder="Message" class="contact__input"></textarea>
 
                     <input type="submit" value="Send Message" class="button contact__button">
                 </form>
             </div>
         </section>
 
+        <!-- Socials -->
+        <section class="socials section rd-container">
+            <span class="section-subtitle">Find Me Here</span>
+            <h2 class="section-title">Socials</h2>
+            
+            <div class="socials__container">
+                <div class="socials__box" >
+                    <a href="#" class="socials__social-icon"><i class='bx bxl-github'></i></a>
+                    <a href="#" class="socials__social-icon"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="#" class="socials__social-icon"><i class='bx bx-envelope'></i></a>
+                    <a href="#" class="socials__social-icon"><i class='bx bxl-google-plus'></i></a>
+                </div>
+            </div>
+
+        </section>
+
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer__container bd-container">
+        <div class="footer__container rd-container">
             <h1 class="footer__title">Raynal D'cunha</h1>
             <p class="footer__description">Personal Potfolio Website</p>
 
-            <div class="footer__social">
+            <!-- <div class="footer__social">
                 <a href="#" class="footer__link"><i class="bx bxl-linkedin"></i></a>
                 <a href="#" class="footer__link"><i class="bx bxl-github"></i></a>
-            </div>
+            </div> -->
             <p class="footer__copy">&#169; 2021 04xRaynal, No Rights Reserved.</p>
         </div>
     </footer>
