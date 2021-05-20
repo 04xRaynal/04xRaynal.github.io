@@ -97,7 +97,7 @@ img {
 
 /* ===Class CSS=== */
 .section {
-    padding: 4rem 0 2rem;
+    padding: 2rem 0 2rem;
 }
 
 .section-title, .section-subtitle {
@@ -107,7 +107,7 @@ img {
 .section-title {
     font-size: var(--h1-font-size);
     color: var(--first-color);
-    margin-bottom: var(--mb-3);
+    /* margin-bottom: var(--mb-3); */
 }
 
 .section-subtitle {
@@ -248,6 +248,39 @@ img {
     bottom: 1.5rem;
 }
 
+/* ===Buttons=== */
+.button {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--first-color-lighten);
+    padding: .75rem 1rem;
+    border-radius: .25rem;
+    transition: .3s;
+}
+
+.button:hover {
+    background-color: var(--first-color-dark);
+}
+
+.button-white {
+    background-color: var(--first-color-lighten);
+    color: var(--first-color-dark);
+}
+
+.button-white:hover {
+    background-color: var(--first-color-lighten);
+}
+
+.button-link {
+    background: none;
+    color: var(--first-color);
+    padding: 0;
+}
+
+.button-link:hover {
+    background: none;
+}
+
 /* ===Home=== */
 .home {
     background-color: #000;
@@ -287,6 +320,11 @@ img {
     margin-bottom: var(--mb-3);
 }
 
+.home__button {
+    margin-right: 0.8rem;
+    background-color: var(--first-color-light);
+}
+
 .home__img {
     position: absolute;
     right: 0;
@@ -313,44 +351,11 @@ img {
     color: var(--first-color-light);
 }
 
-/* ===Buttons=== */
-.button {
-    display: inline-block;
-    background-color: var(--first-color);
-    color: var(--first-color-lighten);
-    padding: .75rem 1rem;
-    border-radius: .25rem;
-    transition: .3s;
-}
-
-.button:hover {
-    background-color: var(--first-color-dark);
-}
-
-.button-light {
-    background-color: var(--first-color-light);
-}
-
-.button-white {
-    background-color: var(--first-color-lighten);
-    color: var(--first-color-dark);
-}
-
-.button-white:hover {
-    background-color: var(--first-color-lighten);
-}
-
-.button-link {
-    background: none;
-    color: var(--first-color);
-    padding: 0;
-}
-
-.button-link:hover {
-    background: none;
-}
-
 /* ===About=== */
+.about {
+    margin-top: 1rem;
+}
+
 .about__data {
     text-align: center;
 }
@@ -371,6 +376,37 @@ img {
     justify-self: center;
     width: 220px;
     border-radius: .5rem;
+}
+
+/* ===Divider=== */
+.divider-custom {
+    margin: 0.3rem 0 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider-custom-line {
+    width: 100%;
+    max-width: 7rem;
+    height: .25rem;
+    background-color: var(--first-color);
+    border-radius: 1rem;
+    border-color: var(--first-color);
+}
+
+.divider-custom-line:first-child {
+    margin-right: 0.6rem;
+}
+
+.divider-custom-line:last-child {
+    margin-left: 0.6rem;
+}
+
+.divider-custom-icon {
+    color: var(--first-color);
+    font-size: 2rem;
 }
 
 /* ===Qualification=== */
@@ -719,7 +755,7 @@ img {
     }
 
     .section {
-        padding-top: 6rem;
+        padding-top: 3rem;
     }
 
     .sectio-title {
@@ -769,6 +805,10 @@ img {
 
     .home__img img {
         width: 440px;
+    }
+
+    .about {
+        margin-top: 0;
     }
 
     .about__description {
