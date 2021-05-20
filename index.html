@@ -34,8 +34,9 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <!-- <li class="nav__item"><a href="#services" class="nav__link">Services</a></li> -->
                     <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
@@ -72,6 +73,7 @@
             </div>
         </section>
 
+        
         <!-- About -->
         <section class="about section rd-container" id="about">
             <!-- <span class="section-subtitle">My History</span> -->
@@ -201,10 +203,73 @@
             </div>
         </section>
 
+        <!-- Skills -->
+        <section class="skills section rd-container" id="skills">
+            <h2 class="section-title">My Skills</h2>
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-cogs"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+
+            <div class="skills__container swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="skills__content swiper-slide">
+                        <img src="assets/img/logo/181_Java-512.png" alt="https://www.vectorlogo.zone/logos/java/java-ar21.svg" title="Java" class="skills__img skills__core-img">
+                        <h3 class="skills__title">Core Java</h3>
+                        <p class="skills__description">Preferred Programming Language.</p>
+                    </div>
+
+                    <div class="skills__content swiper-slide">              
+                        <div class="skills__grid-image">
+                            <img src="assets/img/logo/w3_html5-icon.svg" alt="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" title="HTML 5" class="skills__img">
+                            <img src="assets/img/logo/css3-seeklogo.com.svg" alt="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" title="CSS 3" class="skills__img">
+                            <img src="assets/img/logo/bootstrap-seeklogo.com.svg" alt="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-icon.svg" title="Bootstrap 4" class="skills__img">
+                            <img src="assets/img/logo/javascript-seeklogo.com.svg" alt="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" title="JavaScript" class="skills__img">
+                        </div>
+                        <h3 class="skills__title">Web Development</h3>
+                        <p class="skills__description"></p>
+                    </div>
+
+                    <div class="skills__content swiper-slide">
+                        <div class="skills__grid-image">
+                            <img src="assets/img/logo/java-icon.svg" alt="https://www.vectorlogo.zone/logos/java/java-icon.svg" title="Java" class="skills__img">
+                            <img src="assets/img/logo/javascript-js-seeklogo.com.svg" alt="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" title="JavaScript" class="skills__img">
+                            <img src="https://www.vectorlogo.zone/logos/python/python-icon.svg" alt="https://www.vectorlogo.zone/logos/python/python-icon.svg" title="Python" class="skills__img">
+                        </div>
+                        <h3 class="skills__title">Programming Languages</h3>
+                    </div>
+
+                    <div class="skills__content swiper-slide">
+                        <div class="skills__grid-image">
+                            <img src="assets/img/logo/Oracle_SQL_Developer_logo.svg" alt="https://fr.wikipedia.org/wiki/Fichier:Oracle_SQL_Developer_logo.svg#/media/Fichier:Oracle_SQL_Developer_logo.svg" title="Oracle PL/SQL" class="skills__img">
+                            <img src="assets/img/logo/mysql-seeklogo.com.svg" alt="https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg" title="MySQL" class="skills__img">
+                        </div>
+                        <h3 class="skills__title">Databases</h3>
+                    </div>
+
+                    <div class="skills__content swiper-slide">
+                        <div class="skills__grid-image">
+                            <img src="assets/img/logo/git-scm-icon.svg" alt="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" title="Git" class="skills__img">
+                            <img src="assets/img/logo/github-seeklogo.com.svg" alt="https://www.vectorlogo.zone/logos/github/github-tile.svg" title="Github" class="skills__img">
+                            <img src="assets/img/logo/eclipse-seeklogo.com.svg" alt="https://upload.wikimedia.org/wikipedia/commons/d/d0/Eclipse-Luna-Logo.svg" title="Eclipse IDE" class="skills__img">
+                            <img src="assets/img/logo/oracle-icon.svg" alt="https://www.vectorlogo.zone/logos/oracle/oracle-icon.svg" title="Oracle Cloud" class="skills__img">
+                        </div>
+                        <h3 class="skills__title">Tools</h3>
+                        <p class="skills__description"></p>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+
         <!-- Services -->
-        <section class="services section rd-container" id="services">
-            <span class="section-subtitle">Want to work on a Project together?</span>
+        <section class="services section rd-container">
+            
             <h2 class="section-title">Collaboration</h2>
+            <span class="section-subtitle">Want to work on a Project together?</span>
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
                 <div class="divider-custom-icon"><i class="fas fa-handshake"></i></div>
@@ -215,45 +280,28 @@
                 <div class="services__data">
                     <i class="bx bx-palette services__icon"></i>
                     <h3 class="services__title">Java</h3>
-                    <p class="services__description">Java is my preferred programming language. Most of my projects are made in Java</p>
-                    <a href="#" class="button">Know More</a>
+                    <p class="services__description">Java is my preferred programming language. Most of my projects are made in Java.</p>
+                    <a href="#contact" class="button services__button">Know More</a>
                 </div>
 
                 <div class="services__data">
                     <i class="bx bxs-keyboard services__icon"></i>
                     <h3 class="services__title">Java Desktop Programming</h3>
                     <p class="services__description">Desktop Programs using Java Swing and JavaFX.</p>
-                    <a href="#" class="button">Know More</a>
+                    <a href="#" class="button services__button">Know More</a>
                 </div>
 
                 <div class="services__data">
                     <i class="bx bx-laptop services__icon"></i>
                     <h3 class="services__title">Web Development</h3>
                     <p class="services__description">Front-End of Websites using HTML, CSS and Vanilla JavaScript.</p>
-                    <a href="#" class="button">Know More</a>
+                    <a href="#" class="button services__button">Know More</a>
                 </div>
             </div>
         </section>
 
-        <!-- Project in Mind -->
-        <section class="project section rd-container">
-            <div class="project__container rd-grid">
-                <div class="project__data">
-                    <i class="bx bx-chat project__icon"></i>
 
-                    <div>
-                        <h2 class="project__title">Project in Mind?</h2>
-                        <p class="project__description">Contact Me for details</p>
-                    </div>
-
-                    <div>
-                        <a href="#" class="button button-white">Hire Me</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Portfolio -->
+        <!-- Portfolio Projects -->
         <section class="portfolio section rd-container" id="portfolio">
             <!-- <span class="section-subtitle">My recent works</span> -->
             <h2 class="section-title">Projects</h2>
@@ -329,44 +377,25 @@
             </div>
         </section>
 
-        <!-- Testimonials -->
-        <section class="testimonial section rd-container">
-            <span class="section-subtitle">What Clients Say</span>
-            <h2 class="section-title">Testimonial</h2>
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class='bx bx-conversation' ></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
 
+        <!-- Project in Mind -->
+        <section class="project section rd-container">
+            <div class="project__container rd-grid">
+                <div class="project__data">
+                    <i class="bx bx-chat project__icon"></i>
 
-            <div class="testimonial__container swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="testimonial__content swiper-slide">
-                        <img src="assets/img/about.jpg" alt="" class="testimonial__img">
-                        <h3 class="testimonial__title">Ray</h3>
-                        <span class="testimonial__client">Client</span>
-                        <p class="testimonial__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus at nam qui. Saepe, provident suscipit? Doloribus, animi deleniti expedita similique illum temporibus maiores? Ex autem quia, ipsum veritatis animi sint.</p>
+                    <div>
+                        <h2 class="project__title">Project in Mind?</h2>
+                        <p class="project__description">Contact Me for details</p>
                     </div>
 
-                    <div class="testimonial__content swiper-slide">
-                        <img src="assets/img/about.jpg" alt="" class="testimonial__img">
-                        <h3 class="testimonial__title">Ray</h3>
-                        <span class="testimonial__client">Client</span>
-                        <p class="testimonial__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus at nam qui. Saepe, provident suscipit? Doloribus, animi deleniti expedita similique illum temporibus maiores? Ex autem quia, ipsum veritatis animi sint.</p>
-                    </div>
-
-                    <div class="testimonial__content swiper-slide">
-                        <img src="assets/img/about.jpg" alt="" class="testimonial__img">
-                        <h3 class="testimonial__title">Ray</h3>
-                        <span class="testimonial__client">Client</span>
-                        <p class="testimonial__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus at nam qui. Saepe, provident suscipit? Doloribus, animi deleniti expedita similique illum temporibus maiores? Ex autem quia, ipsum veritatis animi sint.</p>
+                    <div>
+                        <a href="#contact" class="button button-white">Hire Me</a>
                     </div>
                 </div>
-
-                <div class="swiper-pagination"></div>
             </div>
         </section>
+
 
         <!-- Contact Me -->
         <section class="contact section rd-container" id="contact">
@@ -425,8 +454,9 @@
 
         <!-- Socials -->
         <section class="socials section rd-container">
-            <span class="section-subtitle">Find Me Here</span>
+            
             <h2 class="section-title">Socials</h2>
+            <span class="section-subtitle">Find Me Here</span>
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
                 <div class="divider-custom-icon"><i class="fas fa-users"></i></div>
@@ -441,10 +471,10 @@
                     <a href="#" class="socials__social-icon"><i class='bx bxl-google-plus'></i></a>
                 </div>
             </div>
-
         </section>
 
     </main>
+
 
     <!-- Footer -->
     <footer class="footer">

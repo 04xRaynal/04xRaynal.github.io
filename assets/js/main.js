@@ -26,6 +26,9 @@ navLink.forEach(i => i.addEventListener('click', linkAction));
 
 // ---Scroll Section Active Link---
 const sections = document.querySelectorAll('section[id]'); 
+for(sec of sections){
+    console.log(sec);
+}
 
 function scrollActive() {
     const scrollY = window.pageYOffset;
@@ -96,7 +99,7 @@ linkPortfolio.forEach(i => i.addEventListener('click', activePortfolio));
 
 
 // ---Swiper Carousel---
-const mySwiper = new Swiper('.testimonial__container', {
+const mySwiper = new Swiper('.skills__container', {
     spaceBetween: 16,
     loop: true,
     grabCursor: true,

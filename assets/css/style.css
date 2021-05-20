@@ -97,7 +97,7 @@ img {
 
 /* ===Class CSS=== */
 .section {
-    padding: 2rem 0 2rem;
+    padding: 3rem 0 2rem;
 }
 
 .section-title, .section-subtitle {
@@ -105,6 +105,7 @@ img {
 }
 
 .section-title {
+    margin-top: 1.5rem;
     font-size: var(--h1-font-size);
     color: var(--first-color);
     /* margin-bottom: var(--mb-3); */
@@ -351,6 +352,7 @@ img {
     color: var(--first-color-light);
 }
 
+
 /* ===About=== */
 .about {
     margin-top: 1rem;
@@ -448,11 +450,71 @@ img {
     display: block;
 }
 
+/* ===Skills=== */
+.skills__content {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    background-color: #6b2128;
+    color: var(--first-color-lighten);
+    border-radius: .5rem;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(47, 10, 13, .25);
+    width: 80rem;
+    height: 18rem;
+}
+
+.skills__grid-image {
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.skills__img {
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem;
+}
+
+.skills__core-img {
+    margin-top: 1rem;
+    width: 9rem;
+    height: 9rem;
+    align-self: center;
+}
+
+.skills__title {
+    position: absolute;
+    bottom: 0;
+    align-self: center;
+    padding: 1rem;
+    margin-bottom: var(--mb-2);
+}
+
+.skills__description {
+    margin-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+.swiper-pagination {
+    position: initial;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--first-color);
+}
+
+
 /* ===Services=== */
+
+
 .services__data {
+    display: flex;
+    flex-direction: column;
     padding: 3rem 1rem;
     background-color: #FFF;
     border-radius: .5rem;
+    /* justify-content: center; */
     text-align: center;
     transition: .4s;
     box-shadow: 0 4px 6px rgba(174, 190, 205, .3);
@@ -472,7 +534,13 @@ img {
 }
 
 .services__description {
+    align-self: baseline;
     margin-bottom: var(--mb-4);
+}
+
+.services__button {
+    align-self: center;
+    margin-top: auto;
 }
 
 .services__data:hover {
@@ -505,10 +573,14 @@ img {
     margin-bottom: var(--mb-4);
 }
 
-/* ===Portfolio=== */
+
+/* ===Portfolio Projects=== */
 .portfolio__nav {
     text-align: center;
     margin-bottom: var(--mb-3);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .portfolio__item {
@@ -557,38 +629,6 @@ img {
     font-weight: var(--font-semi-bold);
 }
 
-/* ===Testimonial=== */
-.testimonial__content {
-    display: grid;
-    background-color: var(--first-color-dark);
-    color: var(--first-color-lighten);
-    border-radius: .5rem;
-    padding: 2rem 1rem;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(47, 10, 13, .25);
-}
-
-.testimonial__img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    justify-self: center;
-    margin-bottom: var(--mb-1);
-}
-
-.testimonial__client {
-    font-size: var(--small-font-size);
-    color: var(--first-color-light);
-    margin-bottom: var(--mb-2);
-}
-
-.swiper-pagination {
-    position: initial;
-}
-
-.swiper-pagination-bullet-active {
-    background-color: var(--first-color);
-}
 
 /* ===Contact Me=== */
 .contact__container {
@@ -642,7 +682,7 @@ img {
 
 .contact__input {
     width: 100%;
-    padding: 1 rem;
+    padding: 5px;
     border: 2px solid var(--first-color-light);
     color: var(--first-color);
     border-radius: .5rem;
@@ -661,15 +701,8 @@ img {
 }
 
 /* ===Socials=== */
-/* .socials {
-    display: flex;
-    justify-content: center;
-} */
-
 .socials__container {
     display: flex;
-    /* justify-items: center;
-    align-items: center; */
     justify-content: space-evenly;
 }
 
@@ -687,6 +720,7 @@ img {
 .socials__social-icon:hover {
     color: var(--first-color-light);
 }
+
 
 /* ===Footer=== */
 .footer {
@@ -709,21 +743,6 @@ img {
     margin-bottom: var(--mb-3);
 }
 
-/* .footer__social {
-    margin-bottom: var(--mb-6);
-}
-
-.footer__link {
-    font-size: 1.4rem;
-    color: var(--first-color-lighten);
-    margin: var(--mb-1);
-    transition: .3s;
-}
-
-.footer__link:hover {
-    color: var(--first-color-light);
-} */
-
 .footer__copy {
     font-size: var(--smaller-font-size);
     color: var(--first-color-light);
@@ -741,6 +760,10 @@ img {
     .services__container,
     .portfolio__container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skills__grid-image {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .contact__form {
