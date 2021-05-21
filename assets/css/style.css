@@ -97,7 +97,7 @@ img {
 
 /* ===Class CSS=== */
 .section {
-    padding: 3rem 0 2rem;
+    padding-top: 3rem;
 }
 
 .section-title, .section-subtitle {
@@ -105,10 +105,8 @@ img {
 }
 
 .section-title {
-    margin-top: 1.5rem;
     font-size: var(--h1-font-size);
     color: var(--first-color);
-    /* margin-bottom: var(--mb-3); */
 }
 
 .section-subtitle {
@@ -127,7 +125,8 @@ img {
 
 .rd-grid {
     display: grid;
-    gap: 1.5rem;
+    row-gap: 0.6rem;
+    column-gap: 1.5rem;
 }
 
 .l-header {
@@ -358,8 +357,39 @@ img {
     margin-top: 1rem;
 }
 
+.about__container {
+    margin-top: 1.5rem;
+}
+
 .about__data {
     text-align: center;
+}
+
+.about__description {
+    text-align: initial;
+}
+
+.about__list {
+    text-align: initial;
+}
+
+.about__list-item {
+    font-size: 1rem;
+    padding: 0.4rem;
+}
+
+.about__chevron {
+    position: absolute;
+    font-size: 1.5rem;
+}
+
+.about__attribute-key {
+    margin-left: 1.6rem;
+}
+
+.about__attribute-value {
+    font-size: 1.06rem;
+    color: var(--first-color)
 }
 
 .about__description span {
@@ -374,10 +404,73 @@ img {
     display: block;
 }
 
+.about__image-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
 .about__img {
     justify-self: center;
     width: 220px;
     border-radius: .5rem;
+    border: 2px solid var(--first-color);
+}
+
+/* ===Education=== */
+.education__title-block {
+    display: flex;
+    padding-top: 1.5rem;
+    justify-content: center;
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-medium);
+}
+
+.education__block {
+    display: inline-flex;
+    padding: 0.5rem;
+    margin-bottom: 0.6rem;
+}
+
+.education__icon {
+    margin-right: 0.5rem;
+    font-size: 2rem;
+}
+
+.education__data {
+    display: flex;
+    flex-direction: column;
+}
+
+.education__wrapper{
+    display: flex;
+    margin-bottom: 1.8rem;
+}
+.education__icon-wrapper{
+    background-color: var(--first-color);
+    border-radius: 60%;
+    padding: 0.45rem;
+    position: relative;
+    left: 1.10rem;
+}
+
+.education__details-icon {
+    font-size: 1.10rem;
+    color: var(--first-color-lighten);
+}
+
+.education__details{
+    margin-top: 1rem;
+    border-left: 0.2rem solid #aaa;
+    padding: 0.6rem 0 0 1.8rem;
+}
+
+.education__title {
+    margin-bottom: 0.8rem;
+}
+
+.education__duration {
+    margin: 0.3rem 0;
 }
 
 /* ===Divider=== */
@@ -411,44 +504,6 @@ img {
     font-size: 2rem;
 }
 
-/* ===Qualification=== */
-.qualification__container {
-    row-gap: 2.5rem;
-}
-
-.qualification__title {
-    font-size: var(--h3-font-size);
-    color: var(--first-color);
-    margin-bottom: var(--mb-2);
-    display: flex;
-    align-items: center;
-}
-
-.qualification__title-icon {
-    font-size: 1.5rem;
-    margin-right: var(--mb-1);
-}
-
-.qualification__box {
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #CCC;
-}
-
-.qualification__area {
-    font-size: var(--normal-font-size);
-    color: var(--first-color);
-    margin-bottom: var(--mb-1);
-    font-weight: var(--font-medium);
-}
-
-.qualification__icon, .qualification__work {
-    font-size: var(--smaller-font-size);
-    color: var(--first-color-light);
-}
-
-.qualification__work {
-    display: block;
-}
 
 /* ===Skills=== */
 .skills__content {
@@ -506,15 +561,12 @@ img {
 
 
 /* ===Services=== */
-
-
 .services__data {
     display: flex;
     flex-direction: column;
     padding: 3rem 1rem;
     background-color: #FFF;
     border-radius: .5rem;
-    /* justify-content: center; */
     text-align: center;
     transition: .4s;
     box-shadow: 0 4px 6px rgba(174, 190, 205, .3);
@@ -621,6 +673,51 @@ img {
 
 .portfolio__content:hover .portfolio__img {
     transform: scale(1.12);
+}
+
+.portfolio__button-wrapper {
+    display: grid;
+    column-width: 2rem;
+    justify-items: center;
+    grid-template-columns: 15% 30% 10% 30% 15%;
+    /* grid-template-rows: 1rem 1rem; */
+    margin-top: auto;
+}
+
+.view-wrapper, .play-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.view-wrapper {
+    grid-column: 2;
+}
+
+.play-wrapper {
+    grid-column: 4;
+}
+
+.portfolio__button {
+    background: none;
+    color: var(--first-color);
+    padding: 0;
+}
+
+.portfolio__button:hover {
+    color: var(--first-color-light);
+}
+
+.portfolio__button-github {
+    font-size: 2rem;
+}
+
+.portfolio__view {
+    font-size: 0.8rem;
+    background-color: var(--first-color);
+    color: var(--first-color-lighten);
+    padding: 0.1rem;
+    border-radius: 20%;
 }
 
 /* ===Active Menu Portfolio=== */
@@ -756,10 +853,13 @@ img {
     }
 
     .about__container,
-    .qualification__container,
     .services__container,
     .portfolio__container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about__image-wrapper {
+        margin-top: 0;
     }
 
     .skills__grid-image {
@@ -777,12 +877,8 @@ img {
         margin: 0;
     }
 
-    .section {
-        padding-top: 3rem;
-    }
-
-    .sectio-title {
-        margin-bottom: var(--mb-5);
+    .section-title {
+        margin-top: 1.5rem;
     }
 
     .nav {
@@ -848,10 +944,6 @@ img {
         justify-content: space-between;
     }
 
-    .qualification__container {
-        margin: 0 1rem;
-    }
-
     .services__container,
     .portfolio__container {
         grid-template-columns: repeat(3, 1fr);
@@ -884,10 +976,6 @@ img {
     .rd-container {
         margin-left: auto;
         margin-right: auto;
-    }
-
-    .qualification__container {
-        column-gap: 5rem;
     }
 }
 

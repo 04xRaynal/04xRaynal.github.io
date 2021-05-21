@@ -1,495 +1,783 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SWIPER CSS -->  
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
     <!-- Font Awesome ICONS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- BOX ICONS -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    
+    <link rel="stylesheet" href="assets/css/style.css" />
+
     <title>Personal Portfolio</title>
-</head>
-<body>
+  </head>
+
+  <body>
     <!-- Scroll Top -->
     <a href="#" class="scrolltop" id="scroll-top">
-        <i class='bx bx-chevron-up scrolltop__icon'></i>
+      <i class="bx bx-chevron-up scrolltop__icon"></i>
     </a>
 
-
     <!-- Header -->
-    <header class="l-header" id="header">           <!--scroll-header from class removed for now-->
-        <nav class="nav rd-container">
-            <a href="#" class="nav__logo">Raynal D'cunha</a>
+    <header class="l-header" id="header">
+      <!--scroll-header from class removed for now-->
+      <nav class="nav rd-container">
+        <a href="#" class="nav__logo">Raynal D'cunha</a>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <!-- <li class="nav__item"><a href="#services" class="nav__link">Services</a></li> -->
-                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                </ul>
-            </div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">Portfolio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
-        </nav>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
     </header>
 
-
     <main class="l-main">
-        <!-- Home -->
-        <section class="home" id="home">
-            <div class="home__container rd-container rd-grid">
-                <div class="home__data">
-                    <span class="home__greeting">Hello, My name is</span>
-                    <h1 class="home__name">Raynal D'cunha</h1>
-                    <span class="home__profession">Core Java Developer</span>
-                    <a href="assets/pdf/raynal_resume.pdf" class="button home__button" target="_blank">View CV</a>
-                    <a download="" href="assets/pdf/raynal_resume.pdf" class="button home__button">Download CV</a>
-                </div>
+      <!-- Home -->
+      <section class="home" id="home">
+        <div class="home__container rd-container rd-grid">
+          <div class="home__data">
+            <span class="home__greeting">Hello, My name is</span>
+            <h1 class="home__name">Raynal D'cunha</h1>
+            <span class="home__profession">Core Java Developer</span>
+            <a
+              href="assets/pdf/raynal_resume.pdf"
+              class="button home__button"
+              target="_blank"
+              >View CV</a
+            >
+            <a
+              download=""
+              href="assets/pdf/raynal_resume.pdf"
+              class="button home__button"
+              >Download CV</a
+            >
+          </div>
 
-                <div class="home__social">
-                    <a href="#" class="home__social-icon"><i class='bx bxl-github'></i></a>
-                    <a href="#" class="home__social-icon"><i class='bx bxl-linkedin-square'></i></a>
-                    <a href="#" class="home__social-icon"><i class='bx bxl-google-plus'></i></a>
-                </div>
+          <div class="home__social">
+            <a href="#" class="home__social-icon"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a href="#" class="home__social-icon"
+              ><i class="bx bxl-linkedin-square"></i
+            ></a>
+            <a href="#" class="home__social-icon"
+              ><i class="bx bxl-google-plus"></i
+            ></a>
+          </div>
 
-                <div class="home__img">
-                    <img src="assets/img/home.svg" alt="">
-                </div>
+          <div class="home__img">
+            <img src="assets/img/home.svg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="about section rd-container" id="about">
+        <!-- <span class="section-subtitle">My History</span> -->
+        <h2 class="section-title">About Me</h2>
+
+        <div class="divider-custom">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon">
+            <i class="bx bxs-user-badge"></i>
+          </div>
+          <div class="divider-custom-line"></div>
+        </div>
+
+        <div class="about__container rd-grid">
+          <div class="about__data rd-grid">
+            <p class="about__description">
+              I'm a passionate learner who's always
+              <ins>willing to learn</ins> and work across technologies and
+              domains.
+              <br />
+              I’ve picked up quite a few skills during self teaching myself and
+              aim to improve these skills everyday.
+              <br />
+              I'm currently into <strong>Java</strong> and Web Development and
+              working on my Data Structures and Algorithms.
+              <br />
+              <br />
+              I am based in Mumbai and currently focusing on creating clean and
+              efficient applications that are scalable and efficient under the
+              hood.
+            </p>
+
+            <ul class="about__list">
+              <li class="about__list-item">
+                <i class="bx bxs-chevron-right about__chevron"></i>
+                <span class="about__attribute-key">First Name: </span>
+                <span class="about__attribute-value">Raynal</span>
+              </li>
+
+              <li class="about__list-item">
+                <i class="bx bxs-chevron-right about__chevron"></i>
+                <span class="about__attribute-key">Last Name: </span>
+                <span class="about__attribute-value">D'cunha</span>
+              </li>
+
+              <li class="about__list-item">
+                <i class="bx bxs-chevron-right about__chevron"></i>
+                <span class="about__attribute-key">Date of Birth: </span>
+                <span class="about__attribute-value">10th September, 1996</span>
+              </li>
+
+              <li class="about__list-item">
+                <i class="bx bxs-chevron-right about__chevron"></i>
+                <span class="about__attribute-key">Age: </span>
+                <span class="about__attribute-value">24 years</span>
+              </li>
+
+              <li class="about__list-item">
+                <i class="bx bxs-chevron-right about__chevron"></i>
+                <span class="about__attribute-key">Address: </span>
+                <span class="about__attribute-value">Mumbai, India</span>
+              </li>
+
+              <li class="about__list-item">
+                <i class="bx bxs-chevron-right about__chevron"></i>
+                <span class="about__attribute-key">Email: </span>
+                <span class="about__attribute-value"
+                  >dcunha.raynal4@gmail.com</span
+                >
+              </li>
+
+              <li class="about__list-item">
+                <i class="bx bxs-chevron-right about__chevron"></i>
+                <span class="about__attribute-key">Languages Known: </span>
+                <span class="about__attribute-value"
+                  >English, Hindi, Marathi</span
+                >
+              </li>
+            </ul>
+
+            <div>
+              <span class="about__number">12</span>
+              <span class="about__achievement">Core Java Projects</span>
             </div>
-        </section>
 
-        
-        <!-- About -->
-        <section class="about section rd-container" id="about">
-            <!-- <span class="section-subtitle">My History</span> -->
-            <h2 class="section-title">About Me</h2>
-
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class='bx bxs-user-badge'></i></div>
-                <div class="divider-custom-line"></div>
+            <div>
+              <span class="about__number">02</span>
+              <span class="about__achievement"
+                >Front End Projects <br />(HTML, CSS, JavaScript)</span
+              >
             </div>
 
-            <div class="about__container rd-grid">
-                <div class="about__data rd-grid">
-                    <p class="about__description">
-                        <span>Hello, I am <br></span>
-                        A Core Java Fresher, Looking for a job!
-                    </p>
+            <div>
+              <span class="about__number">01</span>
+              <span class="about__achievemnet"
+                >Arduino & Machine Learning <br />Project (Python)</span
+              >
+            </div>
+          </div>
 
+          <div>
+            <div class="about__image-wrapper">
+              <img src="assets/img/about.jpg" alt="" class="about__img" />
+            </div>
+
+            <div class="about__education">
+              <div class="education__title-block">
+                <span class="education__block">
+                  <i class="fas fa-book education__icon"></i>
+                  <h3 class="education__main-title">Education</h3>
+                </span>
+              </div>
+              <div class="education__content">
+                <div class="education__data">
+                  <div class="education__wrapper">
                     <div>
-                        <span class="about__number">12</span>
-                        <span class="about__achievement">Core Java Projects</span>
+                      <div class="education__icon-wrapper">
+                        <i
+                          class="fas fa-graduation-cap education__details-icon"
+                        ></i>
+                      </div>
                     </div>
-
+                    <div class="education__details">
+                      <h3 class="education__title">
+                        Bachelor of Computer Engineering
+                      </h3>
+                      <span class="education__subtitle"
+                        >Don Bosco Institute of Technology, Vidyavihar, Kurla
+                        West</span
+                      >
+                      <div class="education__duration">
+                        <i class="far fa-calendar-alt"></i>
+                        June 2014 - July 2019
+                      </div>
+                      <span class="education__score"
+                        ><i class="bx bx-star"></i> 6.03 CGPA</span
+                      >
+                    </div>
+                  </div>
+                  <div class="education__wrapper">
                     <div>
-                        <span class="about__number">02</span>
-                        <span class="about__achievement">Front End Projects <br>(HTML, CSS, JavaScript)</span>
+                      <div class="education__icon-wrapper">
+                        <i
+                          class="fas fa-graduation-cap education__details-icon"
+                        ></i>
+                      </div>
                     </div>
-
+                    <div class="education__details">
+                      <h3 class="education__title">
+                        H.S.C Maharashtra State Board
+                      </h3>
+                      <span class="education__subtitle"
+                        >St. Mary's Junior College, Kalina, Sanatcruz East</span
+                      >
+                      <div class="education__duration">
+                        <i class="far fa-calendar-alt"></i>
+                        February 2014
+                      </div>
+                      <span class="education__score"
+                        ><i class="bx bx-star"></i> 62.77 %</span
+                      >
+                    </div>
+                  </div>
+                  <div class="education__wrapper">
                     <div>
-                        <span class="about__number">01</span>
-                        <span class="about__achievemnet">Arduino & Machine Learning <br>Project (Python)</span>
+                      <div class="education__icon-wrapper">
+                        <i
+                          class="fas fa-graduation-cap education__details-icon"
+                        ></i>
+                      </div>
                     </div>
-                </div>
-
-                <img src="assets/img/about.jpg" alt="" class="about__img">
-            </div>
-        </section>
-
-        <!-- Qualification -->
-        <section class="qualification section rd-container">
-            <!-- <span class="section-subtitle">Experience and Education</span> -->
-            <h2 class="section-title">Qualification</h2>
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class='bx bxs-graduation' ></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-
-            <div class="qualification__container rd-grid">
-                <div class="qualification__content">
-                    <h2 class="qualification__title">
-                        <i class='bx bx-briefcase-alt qualification__title-icon' ></i>
-                        Work Experience
-                    </h2>
-
-                    <div class="rd-grid">
-                        <div class="qualification__data">
-                            <h3 class="qualification__area">Fresher</h3>
-
-                            <div class="qualification__box">
-                                <span class="qualification__work">
-                                    <i class='bx bxs-briefcase qualification-icon'></i>
-                                    Fresher
-                                </span>
-                            </div>
-                        </div>
+                    <div class="education__details">
+                      <h3 class="education__title">
+                        S.S.C Maharashtra State Board
+                      </h3>
+                      <span class="education__subtitle"
+                        >St. Mary's High School, Kalina, Sanatcruz East</span
+                      >
+                      <div class="education__duration">
+                        <i class="far fa-calendar-alt"></i>
+                        March 2012
+                      </div>
+                      <span class="education__score"
+                        ><i class="bx bx-star"></i> 82.36 %</span
+                      >
                     </div>
+                  </div>
                 </div>
-
-                <div class="qualification__content">
-                    <h2 class="qualification__title">
-                        <i class='bx bx-book-bookmark qualification__title-icon' ></i>
-                        Education
-                    </h2>
-
-                    <div class="rd-grid">
-                        <div class="qualification__data">
-                            <h3 class="qualification__area">Bachelor in Computer Science</h3>
-
-                            <div class="qualification__box">
-                                <span class="qualification__work">
-                                    <i class='bx bx-book-alt qualification-icon'></i>
-                                    Don Bosco Institute of Technology, Vidyavihar, Kurla West
-                                </span>
-
-                                <span class="qualification__work">
-                                    <i class='bx bx-calendar-alt qualification-icon'></i>
-                                    June 2014 - Apr 2019
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="qualification__data">
-                            <h3 class="qualification__area">HSC</h3>
-
-                            <div class="qualification__box">
-                                <span class="qualification__work">
-                                    <i class='bx bx-book-alt qualification-icon'></i>
-                                    St. Mary's Junior College, Kalina, Santacruz East
-                                </span>
-
-                                <span class="qualification__work">
-                                    <i class='bx bx-calendar-alt qualification-icon'></i>
-                                    June 2012 - May 2014
-                                </span>
-                            </div>
-                        </div>
-                            
-
-                        <div class="qualification__data">
-                            <h3 class="qualification__area">SSC</h3>
-
-                            <div class="qualification__box">
-                                <span class="qualification__work">
-                                    <i class='bx bx-book-alt qualification-icon'></i>
-                                    St. Mary's High School, Kalina, Santacruz East
-                                </span>
-
-                                <span class="qualification__work">
-                                    <i class='bx bx-calendar-alt qualification-icon'></i>
-                                    June 2002 - May 2012
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Skills -->
-        <section class="skills section rd-container" id="skills">
-            <h2 class="section-title">My Skills</h2>
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-cogs"></i></div>
-                <div class="divider-custom-line"></div>
+      <!-- Skills -->
+      <section class="skills section rd-container" id="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="divider-custom">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><i class="fas fa-cogs"></i></div>
+          <div class="divider-custom-line"></div>
+        </div>
+
+        <div class="skills__container swiper-container">
+          <div class="swiper-wrapper">
+            <div class="skills__content swiper-slide">
+              <img
+                src="assets/img/logo/181_Java-512.png"
+                alt="https://www.vectorlogo.zone/logos/java/java-ar21.svg"
+                title="Java"
+                class="skills__img skills__core-img"
+              />
+              <h3 class="skills__title">Core Java</h3>
+              <p class="skills__description">Preferred Programming Language.</p>
             </div>
 
-            <div class="skills__container swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="skills__content swiper-slide">
-                        <img src="assets/img/logo/181_Java-512.png" alt="https://www.vectorlogo.zone/logos/java/java-ar21.svg" title="Java" class="skills__img skills__core-img">
-                        <h3 class="skills__title">Core Java</h3>
-                        <p class="skills__description">Preferred Programming Language.</p>
-                    </div>
-
-                    <div class="skills__content swiper-slide">              
-                        <div class="skills__grid-image">
-                            <img src="assets/img/logo/w3_html5-icon.svg" alt="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" title="HTML 5" class="skills__img">
-                            <img src="assets/img/logo/css3-seeklogo.com.svg" alt="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" title="CSS 3" class="skills__img">
-                            <img src="assets/img/logo/bootstrap-seeklogo.com.svg" alt="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-icon.svg" title="Bootstrap 4" class="skills__img">
-                            <img src="assets/img/logo/javascript-seeklogo.com.svg" alt="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" title="JavaScript" class="skills__img">
-                        </div>
-                        <h3 class="skills__title">Web Development</h3>
-                        <p class="skills__description"></p>
-                    </div>
-
-                    <div class="skills__content swiper-slide">
-                        <div class="skills__grid-image">
-                            <img src="assets/img/logo/java-icon.svg" alt="https://www.vectorlogo.zone/logos/java/java-icon.svg" title="Java" class="skills__img">
-                            <img src="assets/img/logo/javascript-js-seeklogo.com.svg" alt="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" title="JavaScript" class="skills__img">
-                            <img src="https://www.vectorlogo.zone/logos/python/python-icon.svg" alt="https://www.vectorlogo.zone/logos/python/python-icon.svg" title="Python" class="skills__img">
-                        </div>
-                        <h3 class="skills__title">Programming Languages</h3>
-                    </div>
-
-                    <div class="skills__content swiper-slide">
-                        <div class="skills__grid-image">
-                            <img src="assets/img/logo/Oracle_SQL_Developer_logo.svg" alt="https://fr.wikipedia.org/wiki/Fichier:Oracle_SQL_Developer_logo.svg#/media/Fichier:Oracle_SQL_Developer_logo.svg" title="Oracle PL/SQL" class="skills__img">
-                            <img src="assets/img/logo/mysql-seeklogo.com.svg" alt="https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg" title="MySQL" class="skills__img">
-                        </div>
-                        <h3 class="skills__title">Databases</h3>
-                    </div>
-
-                    <div class="skills__content swiper-slide">
-                        <div class="skills__grid-image">
-                            <img src="assets/img/logo/git-scm-icon.svg" alt="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" title="Git" class="skills__img">
-                            <img src="assets/img/logo/github-seeklogo.com.svg" alt="https://www.vectorlogo.zone/logos/github/github-tile.svg" title="Github" class="skills__img">
-                            <img src="assets/img/logo/eclipse-seeklogo.com.svg" alt="https://upload.wikimedia.org/wikipedia/commons/d/d0/Eclipse-Luna-Logo.svg" title="Eclipse IDE" class="skills__img">
-                            <img src="assets/img/logo/oracle-icon.svg" alt="https://www.vectorlogo.zone/logos/oracle/oracle-icon.svg" title="Oracle Cloud" class="skills__img">
-                        </div>
-                        <h3 class="skills__title">Tools</h3>
-                        <p class="skills__description"></p>
-                    </div>
-                </div>
-
-                <div class="swiper-pagination"></div>
-            </div>
-        </section>
-
-
-        <!-- Services -->
-        <section class="services section rd-container">
-            
-            <h2 class="section-title">Collaboration</h2>
-            <span class="section-subtitle">Want to work on a Project together?</span>
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-handshake"></i></div>
-                <div class="divider-custom-line"></div>
+            <div class="skills__content swiper-slide">
+              <div class="skills__grid-image">
+                <img
+                  src="assets/img/logo/w3_html5-icon.svg"
+                  alt="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"
+                  title="HTML 5"
+                  class="skills__img"
+                />
+                <img
+                  src="assets/img/logo/css3-seeklogo.com.svg"
+                  alt="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+                  title="CSS 3"
+                  class="skills__img"
+                />
+                <img
+                  src="assets/img/logo/bootstrap-seeklogo.com.svg"
+                  alt="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-icon.svg"
+                  title="Bootstrap 4"
+                  class="skills__img"
+                />
+                <img
+                  src="assets/img/logo/javascript-seeklogo.com.svg"
+                  alt="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg"
+                  title="JavaScript"
+                  class="skills__img"
+                />
+              </div>
+              <h3 class="skills__title">Web Development</h3>
+              <p class="skills__description"></p>
             </div>
 
-            <div class="services__container rd-grid">
-                <div class="services__data">
-                    <i class="bx bx-palette services__icon"></i>
-                    <h3 class="services__title">Java</h3>
-                    <p class="services__description">Java is my preferred programming language. Most of my projects are made in Java.</p>
-                    <a href="#contact" class="button services__button">Know More</a>
-                </div>
-
-                <div class="services__data">
-                    <i class="bx bxs-keyboard services__icon"></i>
-                    <h3 class="services__title">Java Desktop Programming</h3>
-                    <p class="services__description">Desktop Programs using Java Swing and JavaFX.</p>
-                    <a href="#" class="button services__button">Know More</a>
-                </div>
-
-                <div class="services__data">
-                    <i class="bx bx-laptop services__icon"></i>
-                    <h3 class="services__title">Web Development</h3>
-                    <p class="services__description">Front-End of Websites using HTML, CSS and Vanilla JavaScript.</p>
-                    <a href="#" class="button services__button">Know More</a>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Portfolio Projects -->
-        <section class="portfolio section rd-container" id="portfolio">
-            <!-- <span class="section-subtitle">My recent works</span> -->
-            <h2 class="section-title">Projects</h2>
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class='bx bx-code-alt'></i></div>
-                <div class="divider-custom-line"></div>
+            <div class="skills__content swiper-slide">
+              <div class="skills__grid-image">
+                <img
+                  src="assets/img/logo/java-icon.svg"
+                  alt="https://www.vectorlogo.zone/logos/java/java-icon.svg"
+                  title="Java"
+                  class="skills__img"
+                />
+                <img
+                  src="assets/img/logo/javascript-js-seeklogo.com.svg"
+                  alt="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg"
+                  title="JavaScript"
+                  class="skills__img"
+                />
+                <img
+                  src="https://www.vectorlogo.zone/logos/python/python-icon.svg"
+                  alt="https://www.vectorlogo.zone/logos/python/python-icon.svg"
+                  title="Python"
+                  class="skills__img"
+                />
+              </div>
+              <h3 class="skills__title">Programming Languages</h3>
             </div>
 
-            <div class="portfolio__nav">
-                <span class="portfolio__item active-portfolio" data-filter=".recommended">Recommended</span>
-                <span class="portfolio__item" data-filter="all">All</span>
-                <span class="portfolio__item" data-filter=".swing">Java-Swing</span>
-                <span class="portfolio__item" data-filter=".socket">Socket-Programming</span>
-                <span class="portfolio__item" data-filter=".rmi">Java-RMI</span>
-                <span class="portfolio__item" data-filter=".web">Web-Development</span>
+            <div class="skills__content swiper-slide">
+              <div class="skills__grid-image">
+                <img
+                  src="assets/img/logo/Oracle_SQL_Developer_logo.svg"
+                  alt="https://fr.wikipedia.org/wiki/Fichier:Oracle_SQL_Developer_logo.svg#/media/Fichier:Oracle_SQL_Developer_logo.svg"
+                  title="Oracle PL/SQL"
+                  class="skills__img"
+                />
+                <img
+                  src="assets/img/logo/mysql-seeklogo.com.svg"
+                  alt="https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg"
+                  title="MySQL"
+                  class="skills__img"
+                />
+              </div>
+              <h3 class="skills__title">Databases</h3>
             </div>
 
-            <div class="portfolio__container rd-grid">
-                <div class="portfolio__content mix recommended swing">
-                    <img src="https://media.giphy.com/media/pOZhmE42D1WrCWATLK/giphy.gif" class="portfolio__img"></img> <!--changed a tag to img tag, href to src-->
-                    <div class="portfolio__data">
-                        <span class="portfolio__subtitle">NotePad (RightText)</span>
-                        <a href="#"><h2 class="portfolio__title">Windows style NotePad created in Java Swing</h2></a>
-                        <a href="#" class="button button-link">View Details</a>
-                    </div>
-                </div>
-
-                <div class="portfolio__content mix recommended swing">
-                    <img src="https://media.giphy.com/media/LtGpcWj3donEg3Doj2/giphy.gif" class="portfolio__img"></img>
-                    <div class="portfolio__data">
-                        <span class="portfolio__subtitle">Nested TicTacToe</span>
-                        <a href="#"><h2 class="portfolio__title">A Tic Tac Toe Game, with each move a new nested game is initialized. Created in Java Swing</h2></a>
-                        <a href="#" class="button button-link">View Details</a>
-                    </div>
-                </div>
-
-                <div class="portfolio__content mix recommended web">
-                    <img src="https://media.giphy.com/media/SpopD7IQN2gK3qN4jS/giphy.gif" class="portfolio__img"></img>
-                    <div class="portfolio__data">
-                        <span class="portfolio__subtitle">Portfolio Website</span>
-                        <a href="#"><h2 class="portfolio__title">HTML, CSS and Vanilla Javascript is used to create a Website for personal Portfolio</h2></a>
-                        <a href="#" class="button button-link">View Details</a>
-                    </div>
-                </div>
-
-                <div class="portfolio__content mix recommended swing">
-                    <img src="https://media.giphy.com/media/3o6gaSIn4dGiY094Os/giphy.gif" class="portfolio__img"></img>
-                    <div class="portfolio__data">
-                        <span class="portfolio__subtitle">Clock Application</span>
-                        <a href="#"><h2 class="portfolio__title">A Clock Application conating Digital and Analog Clocks, a Calendar, a StopWatch, and a CountDown Timer. Created in Java Swing</h2></a>
-                        <a href="#" class="button button-link">View Details</a>
-                    </div>
-                </div>
-
-                <div class="portfolio__content mix recommended socket">
-                    <img src="https://media.giphy.com/media/lo4hWSPgBJLlUjGYeK/giphy.gif" class="portfolio__img"></img>
-                    <div class="portfolio__data">
-                        <span class="portfolio__subtitle">File Transfer between Machines</span>
-                        <a href="#"><h2 class="portfolio__title">Application created with Java Socket Programming, which list files present in the Server Directory and enables the Client Machine with an option to download these files.</h2></a>
-                        <a href="#" class="button button-link">View Details</a>
-                    </div>
-                </div>
-
-                <div class="portfolio__content mix recommended rmi">
-                    <img src="https://media.giphy.com/media/l4EoT3nunImqfLTa0/giphy.gif" class="portfolio__img"></img>
-                    <div class="portfolio__data">
-                        <span class="portfolio__subtitle">Remote Desktop Manager</span>
-                        <a href="#"><h2 class="portfolio__title">Application created with Java Remote Method Invocation. The Client Machine connects with the Server Machine and has the ability to control the machine remotely.</h2></a>
-                        <a href="#" class="button button-link">View Details</a>
-                    </div>
-                </div>
+            <div class="skills__content swiper-slide">
+              <div class="skills__grid-image">
+                <img
+                  src="assets/img/logo/git-scm-icon.svg"
+                  alt="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
+                  title="Git"
+                  class="skills__img"
+                />
+                <img
+                  src="assets/img/logo/github-seeklogo.com.svg"
+                  alt="https://www.vectorlogo.zone/logos/github/github-tile.svg"
+                  title="Github"
+                  class="skills__img"
+                />
+                <img
+                  src="assets/img/logo/eclipse-seeklogo.com.svg"
+                  alt="https://upload.wikimedia.org/wikipedia/commons/d/d0/Eclipse-Luna-Logo.svg"
+                  title="Eclipse IDE"
+                  class="skills__img"
+                />
+                <img
+                  src="assets/img/logo/oracle-icon.svg"
+                  alt="https://www.vectorlogo.zone/logos/oracle/oracle-icon.svg"
+                  title="Oracle Cloud"
+                  class="skills__img"
+                />
+              </div>
+              <h3 class="skills__title">Tools</h3>
+              <p class="skills__description"></p>
             </div>
-        </section>
+          </div>
 
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
 
-        <!-- Project in Mind -->
-        <section class="project section rd-container">
-            <div class="project__container rd-grid">
-                <div class="project__data">
-                    <i class="bx bx-chat project__icon"></i>
+      <!-- Services -->
+      <section class="services section rd-container">
+        <h2 class="section-title">Collaboration</h2>
+        <span class="section-subtitle"
+          >Want to work on a Project together?</span
+        >
+        <div class="divider-custom">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <div class="divider-custom-line"></div>
+        </div>
 
-                    <div>
-                        <h2 class="project__title">Project in Mind?</h2>
-                        <p class="project__description">Contact Me for details</p>
-                    </div>
+        <div class="services__container rd-grid">
+          <div class="services__data">
+            <i class="bx bx-palette services__icon"></i>
+            <h3 class="services__title">Java</h3>
+            <p class="services__description">
+              Java is my preferred programming language. Most of my projects are
+              made in Java.
+            </p>
+            <a href="#contact" class="button services__button">Know More</a>
+          </div>
 
-                    <div>
-                        <a href="#contact" class="button button-white">Hire Me</a>
-                    </div>
+          <div class="services__data">
+            <i class="bx bxs-keyboard services__icon"></i>
+            <h3 class="services__title">Desktop Application Programming</h3>
+            <p class="services__description">
+              Desktop Applications using Java Swing and JavaFX.
+            </p>
+            <a href="#contact" class="button services__button">Know More</a>
+          </div>
+
+          <div class="services__data">
+            <i class="bx bx-laptop services__icon"></i>
+            <h3 class="services__title">Web Development</h3>
+            <p class="services__description">
+              Front-End of Websites using HTML, CSS and Vanilla JavaScript.
+            </p>
+            <a href="#contact" class="button services__button">Know More</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Projects -->
+      <section class="portfolio section rd-container" id="portfolio">
+        <h2 class="section-title">Projects</h2>
+        <div class="divider-custom">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><i class="bx bx-code-alt"></i></div>
+          <div class="divider-custom-line"></div>
+        </div>
+
+        <div class="portfolio__nav">
+          <span
+            class="portfolio__item active-portfolio"
+            data-filter=".recommended"
+            >Recommended</span
+          >
+          <span class="portfolio__item" data-filter="all">All</span>
+          <span class="portfolio__item" data-filter=".swing">Java-Swing</span>
+          <span class="portfolio__item" data-filter=".socket"
+            >Socket-Programming</span
+          >
+          <span class="portfolio__item" data-filter=".rmi">Java-RMI</span>
+          <span class="portfolio__item" data-filter=".web"
+            >Web-Development</span
+          >
+        </div>
+
+        <div class="portfolio__container rd-grid">
+          <div class="portfolio__content mix recommended swing">
+            <img
+              src="https://media.giphy.com/media/pOZhmE42D1WrCWATLK/giphy.gif"
+              class="portfolio__img"
+            />
+            <!--changed a tag to img tag, href to src-->
+            <div class="portfolio__data">
+              <span class="portfolio__title">NotePad (RightText)</span>
+              <a href="#">
+                <h2 class="portfolio__subtitle">
+                  Windows style NotePad created in Java Swing
+                </h2>
+              </a>
+              <div class="portfolio__button-wrapper">
+                <div class="view-wrapper">
+                  <a href="#contact" class="portfolio__button"
+                    ><i class="bx bxl-github portfolio__button-github"></i
+                  ></a>
+                  <a href="#contact" class="portfolio__button portfolio__view"
+                    >View</a
+                  >
                 </div>
-            </div>
-        </section>
-
-
-        <!-- Contact Me -->
-        <section class="contact section rd-container" id="contact">
-            <!-- <span class="section-subtitle">For Project Collaboration / Hiring</span> -->
-            <h2 class="section-title">Contact Me</h2>
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class='bx bxs-phone' ></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-
-            <div class="contact__container rd-grid">
-                <div class="contact__content rd-grid">
-                    <div class="contact__box">
-                        <i class="far fa-laugh-wink contact__icon"></i>
-                        <h3 class="contact__title">Name</h3>
-                        <span class="contact__description">Raynal D'cunha</span>
-                    </div>
-
-                    <div class="contact__box">
-                        <i class="bx bx-home contact__icon"></i>
-                        <h3 class="contact__title">Location</h3>
-                        <span class="contact__description">Kalina, Santacruz East, <br>Mumbai, Maharashtra <br>India <br>Pincode: 400098</span>
-                    </div>
-
-                    <div class="contact__box">
-                        <i class='bx bx-phone contact__icon'></i>
-                        <h3 class="contact__title">Phone</h3>
-                        <span class="contact__description">+91-9702062655</span>
-                    </div>
-
-                    <div class="contact__box">
-                        <i class="bx bx-envelope contact__icon"></i>
-                        <h3 class="contact__title">Gmail</h3>
-                        <span class="contact__description">dcunha.raynal4<wbr>@gmail.com</span>
-                    </div>
+                <div class="play-wrapper">
+                  <a href="#contact" class="portfolio__button"
+                    ><i class="bx bx-play-circle"></i
+                  ></a>
+                  <a href="#contact" class="portfolio__button">Play</a>
                 </div>
-
-                <form action="https://formsubmit.co/5b334bd91e99d3ec3afeb51260f95c5b" method="POST" class="contact__form">
-                    <div class="contact__inputs">
-                        <input type="text" name="name" placeholder="Name" class="contact__input">
-                        <input type="email" name="email" placeholder="Email" class="contact__input">
-                    </div>
-
-                    <div class="contact__inputs">
-                        <input type="text" name="organization" placeholder="Organization" class="contact__input">
-                        <input type="number" name="number" placeholder="Number" class="contact__input">
-                    </div>
-
-                    <textarea name="message" id="" cols="0" rows="7" placeholder="Message" class="contact__input"></textarea>
-
-                    <input type="submit" value="Send Message" class="button contact__button">
-                </form>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <!-- Socials -->
-        <section class="socials section rd-container">
-            
-            <h2 class="section-title">Socials</h2>
-            <span class="section-subtitle">Find Me Here</span>
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-users"></i></div>
-                <div class="divider-custom-line"></div>
+          <div class="portfolio__content mix recommended swing">
+            <img
+              src="https://media.giphy.com/media/LtGpcWj3donEg3Doj2/giphy.gif"
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <span class="portfolio__title">Nested TicTacToe</span>
+              <a href="#">
+                <h2 class="portfolio__subtitle">
+                  A Tic Tac Toe Game, with each move a new nested game is
+                  initialized. Created in Java Swing
+                </h2>
+              </a>
+              <a href="#" class="button button-link">View Details</a>
             </div>
-            
-            <div class="socials__container">
-                <div class="socials__box" >
-                    <a href="#" class="socials__social-icon"><i class='bx bxl-github'></i></a>
-                    <a href="#" class="socials__social-icon"><i class='bx bxl-linkedin-square'></i></a>
-                    <a href="#" class="socials__social-icon"><i class='bx bx-envelope'></i></a>
-                    <a href="#" class="socials__social-icon"><i class='bx bxl-google-plus'></i></a>
-                </div>
-            </div>
-        </section>
+          </div>
 
+          <div class="portfolio__content mix recommended web">
+            <img
+              src="https://media.giphy.com/media/SpopD7IQN2gK3qN4jS/giphy.gif"
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <span class="portfolio__title">Portfolio Website</span>
+              <a href="#">
+                <h2 class="portfolio__subtitle">
+                  HTML, CSS and Vanilla Javascript is used to create a Website
+                  for personal Portfolio
+                </h2>
+              </a>
+              <a href="#" class="button button-link">View Details</a>
+            </div>
+          </div>
+
+          <div class="portfolio__content mix recommended swing">
+            <img
+              src="https://media.giphy.com/media/3o6gaSIn4dGiY094Os/giphy.gif"
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <span class="portfolio__title">Clock Application</span>
+              <a href="#">
+                <h2 class="portfolio__subtitle">
+                  A Clock Application conating Digital and Analog Clocks, a
+                  Calendar, a StopWatch, and a CountDown Timer. Created in Java
+                  Swing
+                </h2>
+              </a>
+              <a href="#" class="button button-link">View Details</a>
+            </div>
+          </div>
+
+          <div class="portfolio__content mix recommended socket">
+            <img
+              src="https://media.giphy.com/media/lo4hWSPgBJLlUjGYeK/giphy.gif"
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <span class="portfolio__title"
+                >File Transfer between Machines</span
+              >
+              <a href="#">
+                <h2 class="portfolio__subtitle">
+                  Application created with Java Socket Programming, which list
+                  files present in the Server Directory and enables the Client
+                  Machine with an option to download these files.
+                </h2>
+              </a>
+              <a href="#" class="button button-link">View Details</a>
+            </div>
+          </div>
+
+          <div class="portfolio__content mix recommended rmi">
+            <img
+              src="https://media.giphy.com/media/l4EoT3nunImqfLTa0/giphy.gif"
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <span class="portfolio__title">Remote Desktop Manager</span>
+              <a href="#">
+                <h2 class="portfolio__subtitle">
+                  Application created with Java Remote Method Invocation. The
+                  Client Machine connects with the Server Machine and has the
+                  ability to control the machine remotely.
+                </h2>
+              </a>
+              <a href="#" class="button button-link">View Details</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project in Mind -->
+      <section class="project section rd-container">
+        <div class="project__container rd-grid">
+          <div class="project__data">
+            <i class="bx bx-chat project__icon"></i>
+
+            <div>
+              <h2 class="project__title">Project in Mind?</h2>
+              <p class="project__description">Contact Me for details</p>
+            </div>
+
+            <div>
+              <a href="#contact" class="button button-white">Hire Me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Me -->
+      <section class="contact section rd-container" id="contact">
+        <!-- <span class="section-subtitle">For Project Collaboration / Hiring</span> -->
+        <h2 class="section-title">Contact Me</h2>
+        <div class="divider-custom">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><i class="bx bxs-phone"></i></div>
+          <div class="divider-custom-line"></div>
+        </div>
+
+        <div class="contact__container rd-grid">
+          <div class="contact__content rd-grid">
+            <div class="contact__box">
+              <i class="far fa-laugh-wink contact__icon"></i>
+              <h3 class="contact__title">Name</h3>
+              <span class="contact__description">Raynal D'cunha</span>
+            </div>
+
+            <div class="contact__box">
+              <i class="bx bx-home contact__icon"></i>
+              <h3 class="contact__title">Location</h3>
+              <span class="contact__description"
+                >Kalina, Santacruz East, <br />Mumbai, Maharashtra <br />India
+                <br />Pincode: 400098</span
+              >
+            </div>
+
+            <div class="contact__box">
+              <i class="bx bx-phone contact__icon"></i>
+              <h3 class="contact__title">Phone</h3>
+              <span class="contact__description">+91-9702062655</span>
+            </div>
+
+            <div class="contact__box">
+              <i class="bx bx-envelope contact__icon"></i>
+              <h3 class="contact__title">Gmail</h3>
+              <span class="contact__description"
+                >dcunha.raynal4<wbr />@gmail.com</span
+              >
+            </div>
+          </div>
+
+          <form
+            action="https://formsubmit.co/5b334bd91e99d3ec3afeb51260f95c5b"
+            method="POST"
+            class="contact__form"
+          >
+            <div class="contact__inputs">
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                class="contact__input"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                class="contact__input"
+              />
+            </div>
+
+            <div class="contact__inputs">
+              <input
+                type="text"
+                name="organization"
+                placeholder="Organization"
+                class="contact__input"
+              />
+              <input
+                type="number"
+                name="number"
+                placeholder="Number"
+                class="contact__input"
+              />
+            </div>
+
+            <textarea
+              name="message"
+              id=""
+              cols="0"
+              rows="7"
+              placeholder="Message"
+              class="contact__input"
+            ></textarea>
+
+            <input
+              type="submit"
+              value="Send Message"
+              class="button contact__button"
+            />
+          </form>
+        </div>
+      </section>
+
+      <!-- Socials -->
+      <section class="socials section rd-container">
+        <h2 class="section-title">Socials</h2>
+        <span class="section-subtitle">Find Me Here</span>
+        <div class="divider-custom">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><i class="fas fa-users"></i></div>
+          <div class="divider-custom-line"></div>
+        </div>
+
+        <div class="socials__container">
+          <div class="socials__box">
+            <a href="#" class="socials__social-icon"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a href="#" class="socials__social-icon"
+              ><i class="bx bxl-linkedin-square"></i
+            ></a>
+            <a href="#" class="socials__social-icon"
+              ><i class="bx bx-envelope"></i
+            ></a>
+            <a href="#" class="socials__social-icon"
+              ><i class="bx bxl-google-plus"></i
+            ></a>
+          </div>
+        </div>
+      </section>
     </main>
-
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer__container rd-container">
-            <h1 class="footer__title">Raynal D'cunha</h1>
-            <p class="footer__description">Personal Potfolio Website</p>
-
-            <!-- <div class="footer__social">
-                <a href="#" class="footer__link"><i class="bx bxl-linkedin"></i></a>
-                <a href="#" class="footer__link"><i class="bx bxl-github"></i></a>
-            </div> -->
-            <p class="footer__copy">&#169; 2021 04xRaynal, No Rights Reserved.</p>
-        </div>
+      <div class="footer__container rd-container">
+        <h1 class="footer__title">Raynal D'cunha</h1>
+        <p class="footer__description">Personal Potfolio Website</p>
+        <p class="footer__copy">&#169; 2021 04xRaynal, No Rights Reserved.</p>
+      </div>
     </footer>
-
 
     <!-- MixItUp Filter -->
     <script src="assets/js/mixitup.min.js"></script>
@@ -502,5 +790,5 @@
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
-</body>
+  </body>
 </html>
