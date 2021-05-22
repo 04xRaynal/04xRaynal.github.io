@@ -371,6 +371,7 @@ img {
 
 .about__list {
     text-align: initial;
+    padding-top: 0.5rem;
 }
 
 .about__list-item {
@@ -641,10 +642,14 @@ img {
 }
 
 .portfolio__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
     background-color: #FFF;
     border-radius: .5rem;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(174, 190, 205, .3);
+    margin-top: auto;
 }
 
 .portfolio__img {
@@ -653,18 +658,25 @@ img {
 }
 
 .portfolio__data {
-    padding: 1.5rem;
-}
-
-.portfolio__subtitle {
-    font-size: var(--small-font-size);
-    color: var(--first-color-light);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+    /* padding-bottom: 0.5rem; */
 }
 
 .portfolio__title {
-    font-size: var(--h3-font-size);
+    font-size: 1.35rem;
+    /* font-weight: 550; */
     color: var(--first-color);
-    margin: var(--mb-2) 0;
+    margin: var(--mb-1) 0;
+}
+
+.portfolio__subtitle {
+    display: block;
+    font-size: var(--normal-font-size);
+    /* color: var(--first-color-light); */
+    padding: 0.5rem 0 1rem;
 }
 
 .portfolio__content:hover {
@@ -677,47 +689,58 @@ img {
 
 .portfolio__button-wrapper {
     display: grid;
-    column-width: 2rem;
+    /* column-width: 2rem; */
     justify-items: center;
-    grid-template-columns: 15% 30% 10% 30% 15%;
-    /* grid-template-rows: 1rem 1rem; */
+    grid-template-columns: 30% 15% 10% 15% 30%;
+    grid-template-rows: 58% 17% 25%;
     margin-top: auto;
+    margin-bottom: 0.5rem;
 }
 
-.view-wrapper, .play-wrapper {
+/* .view-wrapper, .play-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 
-.view-wrapper {
+.portfolio__button-github-icon {
     grid-column: 2;
+    grid-row: 1;
 }
 
-.play-wrapper {
+.portfolio__button-run-icon {
     grid-column: 4;
+    grid-row: 1;
 }
 
-.portfolio__button {
+.portfolio__button-github-text {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.portfolio__button-run-text {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.portfolio__button{
+    /* position: absolute; */
     background: none;
     color: var(--first-color);
-    padding: 0;
+    /* padding: 0; */
+    font-size: 3.5rem;
 }
 
 .portfolio__button:hover {
     color: var(--first-color-light);
 }
 
-.portfolio__button-github {
-    font-size: 2rem;
-}
 
-.portfolio__view {
+
+.portfolio__button-text {
+    /* position: ; */
     font-size: 0.8rem;
-    background-color: var(--first-color);
-    color: var(--first-color-lighten);
-    padding: 0.1rem;
-    border-radius: 20%;
+    font-weight: var(--font-semi-bold);
 }
 
 /* ===Active Menu Portfolio=== */
