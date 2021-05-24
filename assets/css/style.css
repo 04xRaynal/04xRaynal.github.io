@@ -342,7 +342,7 @@ img {
 
 .home__social-icon {
     width: max-content;
-    font-size: 1.3rem;
+    font-size: 1.75rem;
     margin-bottom: var(--mb-2);
     color: var(--first-color-lighten);
 }
@@ -358,7 +358,7 @@ img {
 }
 
 .about__container {
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
 }
 
 .about__data {
@@ -691,8 +691,8 @@ img {
     display: grid;
     /* column-width: 2rem; */
     justify-items: center;
-    grid-template-columns: 30% 15% 10% 15% 30%;
-    grid-template-rows: 58% 17% 25%;
+    grid-template-columns: 30% 10% 20% 10% 30%;
+    grid-template-rows: 60% 15% 25%;
     margin-top: auto;
     margin-bottom: 0.5rem;
 }
@@ -735,13 +735,12 @@ img {
     color: var(--first-color-light);
 }
 
-
-
 .portfolio__button-text {
     /* position: ; */
     font-size: 0.8rem;
     font-weight: var(--font-semi-bold);
 }
+
 
 /* ===Active Menu Portfolio=== */
 .active-portfolio {

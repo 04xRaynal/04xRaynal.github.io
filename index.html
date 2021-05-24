@@ -53,7 +53,7 @@
               <a href="#skills" class="nav__link">Skills</a>
             </li>
             <li class="nav__item">
-              <a href="#portfolio" class="nav__link">Portfolio</a>
+              <a href="#portfolio-projects" class="nav__link">Projects</a>
             </li>
             <li class="nav__item">
               <a href="#contact" class="nav__link">Contact</a>
@@ -134,7 +134,7 @@
               working on my Data Structures and Algorithms.
               <br />
               <br />
-              I am based in Mumbai and currently focusing on creating clean and
+              I live in Mumbai and am currently focusing on creating clean and
               efficient applications that are scalable and efficient under the
               hood.
             </p>
@@ -188,7 +188,7 @@
             </ul>
 
             <div>
-              <span class="about__number">12</span>
+              <span class="about__number">13</span>
               <span class="about__achievement">Core Java Projects</span>
             </div>
 
@@ -478,7 +478,7 @@
       </section>
 
       <!-- Portfolio Projects -->
-      <section class="portfolio section rd-container" id="portfolio">
+      <section class="portfolio section rd-container" id="portfolio-projects">
         <h2 class="section-title">Projects</h2>
         <div class="divider-custom">
           <div class="divider-custom-line"></div>
@@ -487,12 +487,12 @@
         </div>
 
         <div class="portfolio__nav">
+          <span class="portfolio__item" data-filter="all">All</span>
           <span
             class="portfolio__item active-portfolio"
             data-filter=".recommended"
             >Recommended</span
           >
-          <span class="portfolio__item" data-filter="all">All</span>
           <span class="portfolio__item" data-filter=".swing">Java-Swing</span>
           <span class="portfolio__item" data-filter=".socket"
             >Socket-Programming</span
@@ -506,7 +506,7 @@
         <div class="portfolio__container rd-grid">
           <div class="portfolio__content mix recommended swing">
             <img
-              src="https://media.giphy.com/media/pOZhmE42D1WrCWATLK/giphy.gif"
+              src="https://media.giphy.com/media/bFmQVLnU4Smk/giphy.gif"
               class="portfolio__img"
             />
             <!--changed a tag to img tag, href to src-->
@@ -560,7 +560,7 @@
 
           <div class="portfolio__content mix recommended swing">
             <img
-              src="https://media.giphy.com/media/LtGpcWj3donEg3Doj2/giphy.gif"
+              src="https://media.giphy.com/media/riDHBmjuV2NhOJ2IeU/giphy.gif"
               class="portfolio__img"
             />
             <div class="portfolio__data">
@@ -721,7 +721,123 @@
             </div>
           </div>
 
-          <div class="portfolio__content mix recommended socket">
+          <div class="portfolio__content mix recommended swing">
+            <img
+              src="https://media.giphy.com/media/3k2rX9atxlYSsd7F55/giphy.gif"
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <span class="portfolio__title">File Explorer</span>
+
+              <span class="portfolio__subtitle">
+                A File Manager which displays all your system files and allows
+                you to rename, delete and edit those files. Created in Java
+                Swing
+              </span>
+
+              <div class="portfolio__button-wrapper">
+                <div class="portfolio__button-github-icon">
+                  <a
+                    href="https://github.com/04xRaynal/File_Explorer_JavaSwing.git"
+                    target="_blank"
+                    ><i
+                      class="
+                        bx
+                        bxl-github
+                        portfolio__button portfolio__button-icon
+                      "
+                    ></i
+                  ></a>
+                </div>
+                <div class="portfolio__button-github-text">
+                  <a
+                    href="https://github.com/04xRaynal/File_Explorer_JavaSwing.git"
+                    target="_blank"
+                    class="portfolio__button portfolio__button-text"
+                    >View</a
+                  >
+                </div>
+
+                <div class="portfolio__button-run-icon">
+                  <a
+                    href="https://replit.com/@MajinVegetaSSJ2/File-Explorer?v=1"
+                    target="_blank"
+                    ><i
+                      class="
+                        bx bx-play-circle
+                        portfolio__button portfolio__button-icon
+                      "
+                    ></i>
+                  </a>
+                </div>
+                <div class="portfolio__button-run-text">
+                  <a
+                    href="https://replit.com/@MajinVegetaSSJ2/File-Explorer?v=1"
+                    target="_blank"
+                    class="portfolio__button portfolio__button-text"
+                    >Run
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__content mix recommended rmi">
+            <img
+              src="https://media.giphy.com/media/3o7btTSuIjfrURCeXu/giphy.gif"
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <span class="portfolio__title">Remote Desktop Manager</span>
+
+              <span class="portfolio__subtitle">
+                Application created with Java Remote Method Invocation. The
+                Client Machine connects with the Server Machine and has the
+                ability to control the machine remotely.
+              </span>
+
+              <div class="portfolio__button-wrapper">
+                <div class="portfolio__button-github-icon">
+                  <a href="#contact"
+                    ><i
+                      class="
+                        bx
+                        bxl-github
+                        portfolio__button portfolio__button-icon
+                      "
+                    ></i
+                  ></a>
+                </div>
+                <div class="portfolio__button-github-text">
+                  <a
+                    href="#contact"
+                    class="portfolio__button portfolio__button-text"
+                    >View</a
+                  >
+                </div>
+
+                <div class="portfolio__button-run-icon">
+                  <a href="#contact"
+                    ><i
+                      class="
+                        bx bx-play-circle
+                        portfolio__button portfolio__button-icon
+                      "
+                    ></i>
+                  </a>
+                </div>
+                <div class="portfolio__button-run-text">
+                  <a
+                    href="#contact"
+                    class="portfolio__button portfolio__button-text"
+                    >Run
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__content mix socket non-rec-project">
             <img
               src="https://media.giphy.com/media/lo4hWSPgBJLlUjGYeK/giphy.gif"
               class="portfolio__img"
@@ -778,23 +894,23 @@
             </div>
           </div>
 
-          <div class="portfolio__content mix recommended rmi">
+          <div class="portfolio__content mix swing non-rec-project">
             <img
-              src="https://media.giphy.com/media/l4EoT3nunImqfLTa0/giphy.gif"
+              src="https://media.giphy.com/media/l1Et6k00qp9fMTP8s/giphy.gif"
               class="portfolio__img"
             />
             <div class="portfolio__data">
-              <span class="portfolio__title">Remote Desktop Manager</span>
+              <span class="portfolio__title">Tic Tac Toe</span>
 
               <span class="portfolio__subtitle">
-                Application created with Java Remote Method Invocation. The
-                Client Machine connects with the Server Machine and has the
-                ability to control the machine remotely.
+                A Classic TicTacToe using Java Swing
               </span>
 
               <div class="portfolio__button-wrapper">
                 <div class="portfolio__button-github-icon">
-                  <a href="#contact"
+                  <a
+                    href="https://github.com/04xRaynal/TicTacToe_JavaSwing.git"
+                    target="_blank"
                     ><i
                       class="
                         bx
@@ -806,14 +922,17 @@
                 </div>
                 <div class="portfolio__button-github-text">
                   <a
-                    href="#contact"
+                    href="https://github.com/04xRaynal/TicTacToe_JavaSwing.git"
+                    target="_blank"
                     class="portfolio__button portfolio__button-text"
                     >View</a
                   >
                 </div>
 
                 <div class="portfolio__button-run-icon">
-                  <a href="#contact"
+                  <a
+                    href="https://replit.com/@MajinVegetaSSJ2/Tic-Tac-Toe?v=1"
+                    target="_blank"
                     ><i
                       class="
                         bx bx-play-circle
@@ -824,7 +943,428 @@
                 </div>
                 <div class="portfolio__button-run-text">
                   <a
-                    href="#contact"
+                    href="https://replit.com/@MajinVegetaSSJ2/Tic-Tac-Toe?v=1"
+                    target="_blank"
+                    class="portfolio__button portfolio__button-text"
+                    >Run
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__content mix swing non-rec-project">
+            <img
+              src="https://media.giphy.com/media/xT5LMAaXrdmXKAHAiI/giphy.gif"
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <span class="portfolio__title">Online Test System</span>
+
+              <span class="portfolio__subtitle">
+                An Online Test GUI created with Java Swing and using Excel Sheet
+                to store and retrieve data (essentially as a database) (Apache
+                POI Library)
+              </span>
+
+              <div class="portfolio__button-wrapper">
+                <div class="portfolio__button-github-icon">
+                  <a
+                    href="https://github.com/04xRaynal/OnlineTest_JavaSwing_ApachePOI.git"
+                    target="_blank"
+                    ><i
+                      class="
+                        bx
+                        bxl-github
+                        portfolio__button portfolio__button-icon
+                      "
+                    ></i
+                  ></a>
+                </div>
+                <div class="portfolio__button-github-text">
+                  <a
+                    href="https://github.com/04xRaynal/OnlineTest_JavaSwing_ApachePOI.git"
+                    target="_blank"
+                    class="portfolio__button portfolio__button-text"
+                    >View</a
+                  >
+                </div>
+
+                <div class="portfolio__button-run-icon">
+                  <a
+                    href="https://replit.com/@MajinVegetaSSJ2/Online-Test?v=1"
+                    target="_blank"
+                    ><i
+                      class="
+                        bx bx-play-circle
+                        portfolio__button portfolio__button-icon
+                      "
+                    ></i>
+                  </a>
+                </div>
+                <div class="portfolio__button-run-text">
+                  <a
+                    href="https://replit.com/@MajinVegetaSSJ2/Online-Test?v=1"
+                    target="_blank"
+                    class="portfolio__button portfolio__button-text"
+                    >Run
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__content mix swing non-rec-project">
+            <img
+              src="https://media.giphy.com/media/l2Je6sbvJEn1W9OWQ/giphy.gif"
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <span class="portfolio__title">Picture Puzzle</span>
+
+              <span class="portfolio__subtitle">
+                A Picture Puzzle using Java Swing
+              </span>
+
+              <div class="portfolio__button-wrapper">
+                <div class="portfolio__button-github-icon">
+                  <a
+                    href="https://github.com/04xRaynal/Picture_Puzzle_JavaSwing.git"
+                    target="_blank"
+                    ><i
+                      class="
+                        bx
+                        bxl-github
+                        portfolio__button portfolio__button-icon
+                      "
+                    ></i
+                  ></a>
+                </div>
+                <div class="portfolio__button-github-text">
+                  <a
+                    href="https://github.com/04xRaynal/Picture_Puzzle_JavaSwing.git"
+                    target="_blank"
+                    class="portfolio__button portfolio__button-text"
+                    >View</a
+                  >
+                </div>
+
+                <div class="portfolio__button-run-icon">
+                  <a
+                    href="https://replit.com/@MajinVegetaSSJ2/Picture-Puzzle?v=1"
+                    target="_blank"
+                    ><i
+                      class="
+                        bx bx-play-circle
+                        portfolio__button portfolio__button-icon
+                      "
+                    ></i>
+                  </a>
+                </div>
+                <div class="portfolio__button-run-text">
+                  <a
+                    href="https://replit.com/@MajinVegetaSSJ2/Picture-Puzzle?v=1"
+                    target="_blank"
+                    class="portfolio__button portfolio__button-text"
+                    >Run
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__content mix swing non-rec-project">
+            <img
+              src="https://media.giphy.com/media/QiBQ6LX4TcDA4uVVqn/giphy.gif"
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <span class="portfolio__title">IP Finder</span>
+
+              <span class="portfolio__subtitle">
+                A simple GUI Application made on Java Swing to displays your
+                System Private and Public IP also finds IP address of an entered
+                URL.
+              </span>
+
+              <div class="portfolio__button-wrapper">
+                <div class="portfolio__button-github-icon">
+                  <a
+                    href="https://github.com/04xRaynal/whatsMyIP_IPFinder_JavaSwing.git"
+                    target="_blank"
+                    ><i
+                      class="
+                        bx
+                        bxl-github
+                        portfolio__button portfolio__button-icon
+                      "
+                    ></i
+                  ></a>
+                </div>
+                <div class="portfolio__button-github-text">
+                  <a
+                    href="https://github.com/04xRaynal/whatsMyIP_IPFinder_JavaSwing.git"
+                    target="_blank"
+                    class="portfolio__button portfolio__button-text"
+                    >View</a
+                  >
+                </div>
+
+                <div class="portfolio__button-run-icon">
+                  <a
+                    href="https://replit.com/@MajinVegetaSSJ2/IP-Finder?v=1"
+                    target="_blank"
+                    ><i
+                      class="
+                        bx bx-play-circle
+                        portfolio__button portfolio__button-icon
+                      "
+                    ></i>
+                  </a>
+                </div>
+                <div class="portfolio__button-run-text">
+                  <a
+                    href="https://replit.com/@MajinVegetaSSJ2/IP-Finder?v=1"
+                    target="_blank"
+                    class="portfolio__button portfolio__button-text"
+                    >Run
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__content mix swing non-rec-project">
+            <img
+              src="https://media.giphy.com/media/l2JdZ6jQkHjwlCDkI/giphy.gif"
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <span class="portfolio__title">Scientific Calculator</span>
+
+              <span class="portfolio__subtitle">
+                A Scientific Calculator using Java Swing
+              </span>
+
+              <div class="portfolio__button-wrapper">
+                <div class="portfolio__button-github-icon">
+                  <a
+                    href="https://github.com/04xRaynal/Scientific_Calculator_JavaSwing.git"
+                    target="_blank"
+                    ><i
+                      class="
+                        bx
+                        bxl-github
+                        portfolio__button portfolio__button-icon
+                      "
+                    ></i
+                  ></a>
+                </div>
+                <div class="portfolio__button-github-text">
+                  <a
+                    href="https://github.com/04xRaynal/Scientific_Calculator_JavaSwing.git"
+                    target="_blank"
+                    class="portfolio__button portfolio__button-text"
+                    >View</a
+                  >
+                </div>
+
+                <div class="portfolio__button-run-icon">
+                  <a
+                    href="https://replit.com/@MajinVegetaSSJ2/Scientific-Calculator?v=1"
+                    target="_blank"
+                    ><i
+                      class="
+                        bx bx-play-circle
+                        portfolio__button portfolio__button-icon
+                      "
+                    ></i>
+                  </a>
+                </div>
+                <div class="portfolio__button-run-text">
+                  <a
+                    href="https://replit.com/@MajinVegetaSSJ2/Scientific-Calculator?v=1"
+                    target="_blank"
+                    class="portfolio__button portfolio__button-text"
+                    >Run
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__content mix swing non-rec-project">
+            <img
+              src="https://media.giphy.com/media/pKoLm8ZOPgzbq/giphy.gif"
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <span class="portfolio__title">StopWatch</span>
+
+              <span class="portfolio__subtitle">
+                A StopWatch Desktop Application using Java Swing which counts
+                time and also has a Lap Timer Button to record timed sessions.
+              </span>
+
+              <div class="portfolio__button-wrapper">
+                <div class="portfolio__button-github-icon">
+                  <a
+                    href="https://github.com/04xRaynal/StopWatch_JavaSwing.git"
+                    target="_blank"
+                    ><i
+                      class="
+                        bx
+                        bxl-github
+                        portfolio__button portfolio__button-icon
+                      "
+                    ></i
+                  ></a>
+                </div>
+                <div class="portfolio__button-github-text">
+                  <a
+                    href="https://github.com/04xRaynal/StopWatch_JavaSwing.git"
+                    target="_blank"
+                    class="portfolio__button portfolio__button-text"
+                    >View</a
+                  >
+                </div>
+
+                <div class="portfolio__button-run-icon">
+                  <a
+                    href="https://replit.com/@MajinVegetaSSJ2/StopWatch?v=1"
+                    target="_blank"
+                    ><i
+                      class="
+                        bx bx-play-circle
+                        portfolio__button portfolio__button-icon
+                      "
+                    ></i>
+                  </a>
+                </div>
+                <div class="portfolio__button-run-text">
+                  <a
+                    href="https://replit.com/@MajinVegetaSSJ2/StopWatch?v=1"
+                    target="_blank"
+                    class="portfolio__button portfolio__button-text"
+                    >Run
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__content mix swing non-rec-project">
+            <img
+              src="https://media.giphy.com/media/U6esqNtMp2LQIfuQ6p/giphy.gif"
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <span class="portfolio__title">CountDown Timer</span>
+
+              <span class="portfolio__subtitle">
+                A CountDown Timer using Java Swing which counts down the set
+                time.
+              </span>
+
+              <div class="portfolio__button-wrapper">
+                <div class="portfolio__button-github-icon">
+                  <a
+                    href="https://github.com/04xRaynal/CountDown_Timer_JavaSwing.git"
+                    target="_blank"
+                    ><i
+                      class="
+                        bx
+                        bxl-github
+                        portfolio__button portfolio__button-icon
+                      "
+                    ></i
+                  ></a>
+                </div>
+                <div class="portfolio__button-github-text">
+                  <a
+                    href="https://github.com/04xRaynal/CountDown_Timer_JavaSwing.git"
+                    target="_blank"
+                    class="portfolio__button portfolio__button-text"
+                    >View</a
+                  >
+                </div>
+
+                <div class="portfolio__button-run-icon">
+                  <a
+                    href="https://replit.com/@MajinVegetaSSJ2/CountDown-Timer?v=1"
+                    target="_blank"
+                    ><i
+                      class="
+                        bx bx-play-circle
+                        portfolio__button portfolio__button-icon
+                      "
+                    ></i>
+                  </a>
+                </div>
+                <div class="portfolio__button-run-text">
+                  <a
+                    href="https://replit.com/@MajinVegetaSSJ2/CountDown-Timer?v=1"
+                    target="_blank"
+                    class="portfolio__button portfolio__button-text"
+                    >Run
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__content mix web non-rec-project">
+            <img
+              src="https://media.giphy.com/media/26ufnwz3wDUli7GU0/giphy.gif"
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <span class="portfolio__title">ToDo List</span>
+
+              <span class="portfolio__subtitle">
+                A ToDo List Web Application, that displays tasks as a list and
+                enables user to add, delete and restore these tasks.
+              </span>
+
+              <div class="portfolio__button-wrapper">
+                <div class="portfolio__button-github-icon">
+                  <a
+                    href="https://github.com/04xRaynal/ToDo_List_JavaScript.git"
+                    target="_blank"
+                    ><i
+                      class="
+                        bx
+                        bxl-github
+                        portfolio__button portfolio__button-icon
+                      "
+                    ></i
+                  ></a>
+                </div>
+                <div class="portfolio__button-github-text">
+                  <a
+                    href="https://github.com/04xRaynal/ToDo_List_JavaScript.git"
+                    target="_blank"
+                    class="portfolio__button portfolio__button-text"
+                    >View</a
+                  >
+                </div>
+
+                <div class="portfolio__button-run-icon">
+                  <a
+                    href="https://replit.com/@MajinVegetaSSJ2/ToDo-List?v=1"
+                    target="_blank"
+                    ><i
+                      class="
+                        bx bx-play-circle
+                        portfolio__button portfolio__button-icon
+                      "
+                    ></i>
+                  </a>
+                </div>
+                <div class="portfolio__button-run-text">
+                  <a
+                    href="https://replit.com/@MajinVegetaSSJ2/ToDo-List?v=1"
+                    target="_blank"
                     class="portfolio__button portfolio__button-text"
                     >Run
                   </a>
