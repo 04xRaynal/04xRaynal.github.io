@@ -92,6 +92,9 @@ function activePortfolio() {
     if(linkPortfolio){
         linkPortfolio.forEach(i => i.classList.remove('active-portfolio'));
         this.classList.add('active-portfolio');
+        
+        const element = document.querySelectorAll('.portfolio__content');
+        element.forEach(i => i.classList.remove('non-rec-project'));
     }
 }
 

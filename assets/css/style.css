@@ -741,6 +741,10 @@ img {
     font-weight: var(--font-semi-bold);
 }
 
+.non-rec-project {
+    position: absolute;
+    left: -9999px;
+}
 
 /* ===Active Menu Portfolio=== */
 .active-portfolio {
@@ -826,7 +830,7 @@ img {
 }
 
 .socials__box {
-    padding: 0.5rem 0;
+    padding-bottom: 0.5rem;
 }
 
 .socials__social-icon {
@@ -863,10 +867,18 @@ img {
 }
 
 .footer__copy {
-    font-size: var(--smaller-font-size);
+    font-size: var(--small-font-size);
     color: var(--first-color-light);
 }
 
+.footer__link {
+    color: #9c767f;
+}
+
+.footer__link:hover {
+    cursor: pointer;
+    color: var(--first-color-lighten);
+}
 
 /* ===Media Queries=== */
 @media screen and (min-width: 576px) {
