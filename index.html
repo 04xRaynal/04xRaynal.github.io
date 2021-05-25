@@ -26,37 +26,71 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
-    <title>Personal Portfolio</title>
+    <!--Webpage Icon-->
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/img/technologist_emoji.png"
+    />
+
+    <meta
+      name="description"
+      content="Personal Pertfolio Website of Raynal Dcunha, to showcase my Projects"
+    />
+    <meta
+      name="keyword"
+      content="portfolio, java, developer, fresher, resume"
+    />
+    <meta name="robots" content="index" />
+
+    <title>Raynal | Personal Portfolio</title>
   </head>
 
   <body>
     <!-- Scroll Top -->
-    <a href="#" class="scrolltop" id="scroll-top">
+    <a href="#" class="scrolltop" id="scroll-top" aria-label="Chevron-Up">
       <i class="bx bx-chevron-up scrolltop__icon"></i>
     </a>
 
     <!-- Header -->
     <header class="l-header" id="header">
-      <!--scroll-header from class removed for now-->
       <nav class="nav rd-container">
-        <a href="#" class="nav__logo">Raynal D'cunha</a>
+        <a href="#" class="nav__logo" aria-label="My Name as Navigation Logo"
+          >Raynal D'cunha</a
+        >
 
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link active-link">Home</a>
+              <a
+                href="#home"
+                class="nav__link active-link"
+                aria-label="Home Tab"
+                >Home</a
+              >
             </li>
             <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
+              <a href="#about" class="nav__link" aria-label="About Tab"
+                >About</a
+              >
             </li>
             <li class="nav__item">
-              <a href="#skills" class="nav__link">Skills</a>
+              <a href="#skills" class="nav__link" aria-label="Skills Tab"
+                >Skills</a
+              >
             </li>
             <li class="nav__item">
-              <a href="#portfolio-projects" class="nav__link">Projects</a>
+              <a
+                href="#portfolio-projects"
+                class="nav__link"
+                aria-label="Projects Tab"
+                >Projects</a
+              >
             </li>
             <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
+              <a href="#contact" class="nav__link" aria-label="Contact Tab"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
@@ -79,12 +113,14 @@
               href="assets/pdf/raynal_resume.pdf"
               class="button home__button"
               target="_blank"
+              aria-label="View Resume Button"
               >View CV</a
             >
             <a
               download=""
               href="assets/pdf/raynal_resume.pdf"
               class="button home__button"
+              aria-label="Download Resume Button"
               >Download CV</a
             >
           </div>
@@ -94,12 +130,14 @@
               href="https://github.com/04xRaynal"
               target="_blank"
               class="home__social-icon"
+              aria-label="Github Icon"
               ><i class="bx bxl-github"></i
             ></a>
             <a
               href="https://www.linkedin.com/in/raynal-dcunha-048819325/"
               target="_blank"
               class="home__social-icon"
+              aria-label="LinkedIn Icon"
               ><i class="bx bxl-linkedin-square"></i
             ></a>
             <a
@@ -107,19 +145,19 @@
               target="_blank"
               class="home__social-icon"
               title="Repl.it"
+              aria-label="Replit Icon"
               ><i class="bx bxs-bot"></i
             ></a>
           </div>
 
           <div class="home__img">
-            <img src="assets/img/home.svg" alt="" />
+            <img src="assets/img/home.svg" alt="My Avatar" />
           </div>
         </div>
       </section>
 
       <!-- About -->
       <section class="about section rd-container" id="about">
-        <!-- <span class="section-subtitle">My History</span> -->
         <h2 class="section-title">About Me</h2>
 
         <div class="divider-custom">
@@ -205,7 +243,7 @@
             <div>
               <span class="about__number">02</span>
               <span class="about__achievement"
-                >Front End Projects <br />(HTML, CSS, JavaScript)</span
+                >Front End Web Projects <br />(HTML, CSS, JavaScript)</span
               >
             </div>
 
@@ -219,7 +257,11 @@
 
           <div>
             <div class="about__image-wrapper">
-              <img src="assets/img/about.jpg" alt="" class="about__img" />
+              <img
+                src="assets/img/about.jpg"
+                alt="My Profile Picture"
+                class="about__img"
+              />
             </div>
 
             <div class="about__education">
@@ -325,7 +367,7 @@
             <div class="skills__content swiper-slide">
               <img
                 src="assets/img/logo/181_Java-512.png"
-                alt="https://www.vectorlogo.zone/logos/java/java-ar21.svg"
+                alt="Animated Java Logo"
                 title="Java"
                 class="skills__img skills__core-img"
               />
@@ -337,25 +379,25 @@
               <div class="skills__grid-image">
                 <img
                   src="assets/img/logo/w3_html5-icon.svg"
-                  alt="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"
+                  alt="HTML5 Icon"
                   title="HTML 5"
                   class="skills__img"
                 />
                 <img
                   src="assets/img/logo/css3-seeklogo.com.svg"
-                  alt="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+                  alt="CSS 3 Icon"
                   title="CSS 3"
                   class="skills__img"
                 />
                 <img
                   src="assets/img/logo/bootstrap-seeklogo.com.svg"
-                  alt="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-icon.svg"
+                  alt="Bootstrap 4 Icon"
                   title="Bootstrap 4"
                   class="skills__img"
                 />
                 <img
                   src="assets/img/logo/javascript-seeklogo.com.svg"
-                  alt="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg"
+                  alt="Javascript Icon"
                   title="JavaScript"
                   class="skills__img"
                 />
@@ -368,19 +410,19 @@
               <div class="skills__grid-image">
                 <img
                   src="assets/img/logo/java-icon.svg"
-                  alt="https://www.vectorlogo.zone/logos/java/java-icon.svg"
+                  alt="Java Icon"
                   title="Java"
                   class="skills__img"
                 />
                 <img
                   src="assets/img/logo/javascript-js-seeklogo.com.svg"
-                  alt="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg"
+                  alt="JavaScript Icon"
                   title="JavaScript"
                   class="skills__img"
                 />
                 <img
-                  src="https://www.vectorlogo.zone/logos/python/python-icon.svg"
-                  alt="https://www.vectorlogo.zone/logos/python/python-icon.svg"
+                  src="assets/img/logo/python-icon.svg"
+                  alt="Python Icon"
                   title="Python"
                   class="skills__img"
                 />
@@ -392,13 +434,13 @@
               <div class="skills__grid-image">
                 <img
                   src="assets/img/logo/Oracle_SQL_Developer_logo.svg"
-                  alt="https://fr.wikipedia.org/wiki/Fichier:Oracle_SQL_Developer_logo.svg#/media/Fichier:Oracle_SQL_Developer_logo.svg"
+                  alt="Oracle PL/SQL Developer Logo"
                   title="Oracle PL/SQL"
                   class="skills__img"
                 />
                 <img
                   src="assets/img/logo/mysql-seeklogo.com.svg"
-                  alt="https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg"
+                  alt="MySQL Icon"
                   title="MySQL"
                   class="skills__img"
                 />
@@ -410,25 +452,25 @@
               <div class="skills__grid-image">
                 <img
                   src="assets/img/logo/git-scm-icon.svg"
-                  alt="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
+                  alt="Git Icon"
                   title="Git"
                   class="skills__img"
                 />
                 <img
                   src="assets/img/logo/github-seeklogo.com.svg"
-                  alt="https://www.vectorlogo.zone/logos/github/github-tile.svg"
+                  alt="GitHub Icon"
                   title="Github"
                   class="skills__img"
                 />
                 <img
                   src="assets/img/logo/eclipse-seeklogo.com.svg"
-                  alt="https://upload.wikimedia.org/wikipedia/commons/d/d0/Eclipse-Luna-Logo.svg"
+                  alt="Eclipse Logo"
                   title="Eclipse IDE"
                   class="skills__img"
                 />
                 <img
                   src="assets/img/logo/oracle-icon.svg"
-                  alt="https://www.vectorlogo.zone/logos/oracle/oracle-icon.svg"
+                  alt="Oracle Icon"
                   title="Oracle Cloud"
                   class="skills__img"
                 />
@@ -517,9 +559,9 @@
           <div class="portfolio__content mix recommended swing">
             <img
               src="https://media.giphy.com/media/bFmQVLnU4Smk/giphy.gif"
+              alt="NotePad / TextPad using Java Swing"
               class="portfolio__img"
             />
-            <!--changed a tag to img tag, href to src-->
             <div class="portfolio__data">
               <span class="portfolio__title">NotePad (RightText)</span>
 
@@ -534,6 +576,7 @@
                   <a
                     href="https://github.com/04xRaynal/NotePad_JavaSwing_--RightText--.git"
                     target="_blank"
+                    aria-label="Github Icon"
                     ><i
                       class="
                         bx
@@ -556,6 +599,7 @@
                   <a
                     href="https://replit.com/@MajinVegetaSSJ2/NotePad-RightText?v=1"
                     target="_blank"
+                    aria-label="Replit run code"
                     ><i
                       class="
                         bx bx-play-circle
@@ -579,6 +623,7 @@
           <div class="portfolio__content mix recommended swing">
             <img
               src="https://media.giphy.com/media/riDHBmjuV2NhOJ2IeU/giphy.gif"
+              alt="Nested Tic Tac Toe Game using Java Swing"
               class="portfolio__img"
             />
             <div class="portfolio__data">
@@ -594,6 +639,7 @@
                   <a
                     href="https://github.com/04xRaynal/Nested_TicTacToe_JavaSwing.git"
                     target="_blank"
+                    aria-label="Github Icon"
                     ><i
                       class="
                         bx
@@ -616,6 +662,7 @@
                   <a
                     href="https://replit.com/@MajinVegetaSSJ2/Nested-TicTacToe?v=1"
                     target="_blank"
+                    aria-label="Replit run code"
                     ><i
                       class="
                         bx bx-play-circle
@@ -639,6 +686,7 @@
           <div class="portfolio__content mix recommended web">
             <img
               src="https://media.giphy.com/media/SpopD7IQN2gK3qN4jS/giphy.gif"
+              alt="Portfolio Website using HTML, CSS and Vanilla Javascript"
               class="portfolio__img"
             />
             <div class="portfolio__data">
@@ -646,7 +694,7 @@
 
               <span class="portfolio__subtitle">
                 Personal Portfolio Website created using HTML, CSS and Vanilla
-                JavaScript
+                JavaScript.
               </span>
 
               <div class="portfolio__button-wrapper">
@@ -654,6 +702,7 @@
                   <a
                     href="https://github.com/04xRaynal/04xRaynal.github.io.git"
                     target="_blank"
+                    aria-label="Github Icon"
                     ><i
                       class="
                         bx
@@ -673,7 +722,10 @@
                 </div>
 
                 <div class="portfolio__button-run-icon">
-                  <a href="#contact" target="_blank"
+                  <a
+                    href="#contact"
+                    target="_blank"
+                    aria-label="Replit run code"
                     ><i
                       class="
                         bx bx-play-circle
@@ -697,6 +749,7 @@
           <div class="portfolio__content mix recommended swing">
             <img
               src="https://media.giphy.com/media/3o6gaSIn4dGiY094Os/giphy.gif"
+              alt="Clock Application using Java Swing"
               class="portfolio__img"
             />
             <div class="portfolio__data">
@@ -705,7 +758,7 @@
               <span class="portfolio__subtitle">
                 A Clock Desktop Application using Java Swing containing tabs for
                 Digital & Analog Clock, Calendar, StopWatch and a CountDown
-                Timer
+                Timer.
               </span>
 
               <div class="portfolio__button-wrapper">
@@ -713,6 +766,7 @@
                   <a
                     href="https://github.com/04xRaynal/clock_app_JavaSwing.git"
                     target="_blank"
+                    aria-label="Github Icon"
                     ><i
                       class="
                         bx
@@ -735,6 +789,7 @@
                   <a
                     href="https://replit.com/@MajinVegetaSSJ2/Clock-Application?v=1"
                     target="_blank"
+                    aria-label="Replit run code"
                     ><i
                       class="
                         bx bx-play-circle
@@ -758,6 +813,7 @@
           <div class="portfolio__content mix recommended swing">
             <img
               src="https://media.giphy.com/media/3k2rX9atxlYSsd7F55/giphy.gif"
+              alt="File Explorer / File Manager using Java Swing"
               class="portfolio__img"
             />
             <div class="portfolio__data">
@@ -766,7 +822,7 @@
               <span class="portfolio__subtitle">
                 A File Manager which displays all your system files and allows
                 you to rename, delete and edit those files. Created in Java
-                Swing
+                Swing.
               </span>
 
               <div class="portfolio__button-wrapper">
@@ -774,6 +830,7 @@
                   <a
                     href="https://github.com/04xRaynal/File_Explorer_JavaSwing.git"
                     target="_blank"
+                    aria-label="Github Icon"
                     ><i
                       class="
                         bx
@@ -796,6 +853,7 @@
                   <a
                     href="https://replit.com/@MajinVegetaSSJ2/File-Explorer?v=1"
                     target="_blank"
+                    aria-label="Replit run code"
                     ><i
                       class="
                         bx bx-play-circle
@@ -819,6 +877,7 @@
           <div class="portfolio__content mix recommended rmi">
             <img
               src="https://media.giphy.com/media/3o7btTSuIjfrURCeXu/giphy.gif"
+              alt="Remote Desktop Manager/Control using Java RMI and Java Swing"
               class="portfolio__img"
             />
             <div class="portfolio__data">
@@ -837,6 +896,7 @@
                   <a
                     href="https://github.com/04xRaynal/RemoteDesktopManager_JavaRMI_--Control_Wiz--.git"
                     target="_blank"
+                    aria-label="Github Icon"
                     ><i
                       class="
                         bx
@@ -859,6 +919,7 @@
                   <a
                     href="https://replit.com/@MajinVegetaSSJ2/Remote-Desktop-Manager-Java-RMI-ControlWiz?v=1"
                     target="_blank"
+                    aria-label="Replit run code"
                     ><i
                       class="
                         bx bx-play-circle
@@ -882,6 +943,7 @@
           <div class="portfolio__content mix socket non-rec-project">
             <img
               src="https://media.giphy.com/media/lo4hWSPgBJLlUjGYeK/giphy.gif"
+              alt="File Transfer between Machines using Java Socket Programming"
               class="portfolio__img"
             />
             <div class="portfolio__data">
@@ -897,6 +959,7 @@
                   <a
                     href="https://github.com/04xRaynal/File-Transfer_Java-Socket.git"
                     target="_blank"
+                    aria-label="Github Icon"
                     ><i
                       class="
                         bx
@@ -919,6 +982,7 @@
                   <a
                     href="https://replit.com/@MajinVegetaSSJ2/File-Transfer-Java-Socket-Programming?v=1"
                     target="_blank"
+                    aria-label="Replit run code"
                     ><i
                       class="
                         bx bx-play-circle
@@ -942,13 +1006,14 @@
           <div class="portfolio__content mix swing non-rec-project">
             <img
               src="https://media.giphy.com/media/l1Et6k00qp9fMTP8s/giphy.gif"
+              alt="A Classic Tic Tac Toe game using Java Swing"
               class="portfolio__img"
             />
             <div class="portfolio__data">
               <span class="portfolio__title">Tic Tac Toe</span>
 
               <span class="portfolio__subtitle">
-                A Classic TicTacToe using Java Swing
+                A Classic TicTacToe using Java Swing.
               </span>
 
               <div class="portfolio__button-wrapper">
@@ -956,6 +1021,7 @@
                   <a
                     href="https://github.com/04xRaynal/TicTacToe_JavaSwing.git"
                     target="_blank"
+                    aria-label="Github Icon"
                     ><i
                       class="
                         bx
@@ -978,6 +1044,7 @@
                   <a
                     href="https://replit.com/@MajinVegetaSSJ2/Tic-Tac-Toe?v=1"
                     target="_blank"
+                    aria-label="Replit run code"
                     ><i
                       class="
                         bx bx-play-circle
@@ -1001,6 +1068,7 @@
           <div class="portfolio__content mix swing non-rec-project">
             <img
               src="https://media.giphy.com/media/xT5LMAaXrdmXKAHAiI/giphy.gif"
+              alt="Online Test System (MCQ Tests) using Java Swing"
               class="portfolio__img"
             />
             <div class="portfolio__data">
@@ -1009,7 +1077,7 @@
               <span class="portfolio__subtitle">
                 An Online Test GUI created with Java Swing and using Excel Sheet
                 to store and retrieve data (essentially as a database) (Apache
-                POI Library)
+                POI Library).
               </span>
 
               <div class="portfolio__button-wrapper">
@@ -1017,6 +1085,7 @@
                   <a
                     href="https://github.com/04xRaynal/OnlineTest_JavaSwing_ApachePOI.git"
                     target="_blank"
+                    aria-label="Github Icon"
                     ><i
                       class="
                         bx
@@ -1039,6 +1108,7 @@
                   <a
                     href="https://replit.com/@MajinVegetaSSJ2/Online-Test?v=1"
                     target="_blank"
+                    aria-label="Replit run code"
                     ><i
                       class="
                         bx bx-play-circle
@@ -1062,6 +1132,7 @@
           <div class="portfolio__content mix swing non-rec-project">
             <img
               src="https://media.giphy.com/media/l2Je6sbvJEn1W9OWQ/giphy.gif"
+              alt="Picture Puzzle game using Java Swing"
               class="portfolio__img"
             />
             <div class="portfolio__data">
@@ -1076,6 +1147,7 @@
                   <a
                     href="https://github.com/04xRaynal/Picture_Puzzle_JavaSwing.git"
                     target="_blank"
+                    aria-label="Github Icon"
                     ><i
                       class="
                         bx
@@ -1098,6 +1170,7 @@
                   <a
                     href="https://replit.com/@MajinVegetaSSJ2/Picture-Puzzle?v=1"
                     target="_blank"
+                    aria-label="Replit run code"
                     ><i
                       class="
                         bx bx-play-circle
@@ -1121,6 +1194,7 @@
           <div class="portfolio__content mix swing non-rec-project">
             <img
               src="https://media.giphy.com/media/QiBQ6LX4TcDA4uVVqn/giphy.gif"
+              alt="IP Address Finder using Java Swing"
               class="portfolio__img"
             />
             <div class="portfolio__data">
@@ -1137,6 +1211,7 @@
                   <a
                     href="https://github.com/04xRaynal/whatsMyIP_IPFinder_JavaSwing.git"
                     target="_blank"
+                    aria-label="Github Icon"
                     ><i
                       class="
                         bx
@@ -1159,6 +1234,7 @@
                   <a
                     href="https://replit.com/@MajinVegetaSSJ2/IP-Finder?v=1"
                     target="_blank"
+                    aria-label="Replit run code"
                     ><i
                       class="
                         bx bx-play-circle
@@ -1182,13 +1258,14 @@
           <div class="portfolio__content mix swing non-rec-project">
             <img
               src="https://media.giphy.com/media/l2JdZ6jQkHjwlCDkI/giphy.gif"
+              alt="Scientific Calculator using Java Swing"
               class="portfolio__img"
             />
             <div class="portfolio__data">
               <span class="portfolio__title">Scientific Calculator</span>
 
               <span class="portfolio__subtitle">
-                A Scientific Calculator using Java Swing
+                A Scientific Calculator using Java Swing.
               </span>
 
               <div class="portfolio__button-wrapper">
@@ -1196,6 +1273,7 @@
                   <a
                     href="https://github.com/04xRaynal/Scientific_Calculator_JavaSwing.git"
                     target="_blank"
+                    aria-label="Github Icon"
                     ><i
                       class="
                         bx
@@ -1218,6 +1296,7 @@
                   <a
                     href="https://replit.com/@MajinVegetaSSJ2/Scientific-Calculator?v=1"
                     target="_blank"
+                    aria-label="Replit run code"
                     ><i
                       class="
                         bx bx-play-circle
@@ -1241,6 +1320,7 @@
           <div class="portfolio__content mix swing non-rec-project">
             <img
               src="https://media.giphy.com/media/pKoLm8ZOPgzbq/giphy.gif"
+              alt="StopWatch created using Java Swing"
               class="portfolio__img"
             />
             <div class="portfolio__data">
@@ -1256,6 +1336,7 @@
                   <a
                     href="https://github.com/04xRaynal/StopWatch_JavaSwing.git"
                     target="_blank"
+                    aria-label="Github Icon"
                     ><i
                       class="
                         bx
@@ -1278,6 +1359,7 @@
                   <a
                     href="https://replit.com/@MajinVegetaSSJ2/StopWatch?v=1"
                     target="_blank"
+                    aria-label="Replit run code"
                     ><i
                       class="
                         bx bx-play-circle
@@ -1301,6 +1383,7 @@
           <div class="portfolio__content mix swing non-rec-project">
             <img
               src="https://media.giphy.com/media/U6esqNtMp2LQIfuQ6p/giphy.gif"
+              alt="CountDown Timer created using Java Swing"
               class="portfolio__img"
             />
             <div class="portfolio__data">
@@ -1316,6 +1399,7 @@
                   <a
                     href="https://github.com/04xRaynal/CountDown_Timer_JavaSwing.git"
                     target="_blank"
+                    aria-label="Github Icon"
                     ><i
                       class="
                         bx
@@ -1338,6 +1422,7 @@
                   <a
                     href="https://replit.com/@MajinVegetaSSJ2/CountDown-Timer?v=1"
                     target="_blank"
+                    aria-label="Replit run code"
                     ><i
                       class="
                         bx bx-play-circle
@@ -1361,6 +1446,7 @@
           <div class="portfolio__content mix web non-rec-project">
             <img
               src="https://media.giphy.com/media/26ufnwz3wDUli7GU0/giphy.gif"
+              alt="A ToDo List using HTML, CSS and JavaScript"
               class="portfolio__img"
             />
             <div class="portfolio__data">
@@ -1376,6 +1462,7 @@
                   <a
                     href="https://github.com/04xRaynal/ToDo_List_JavaScript.git"
                     target="_blank"
+                    aria-label="Github Icon"
                     ><i
                       class="
                         bx
@@ -1398,6 +1485,7 @@
                   <a
                     href="https://replit.com/@MajinVegetaSSJ2/ToDo-List?v=1"
                     target="_blank"
+                    aria-label="Replit run code"
                     ><i
                       class="
                         bx bx-play-circle
@@ -1440,7 +1528,6 @@
 
       <!-- Contact Me -->
       <section class="contact section rd-container" id="contact">
-        <!-- <span class="section-subtitle">For Project Collaboration / Hiring</span> -->
         <h2 class="section-title">Contact Me</h2>
         <div class="divider-custom">
           <div class="divider-custom-line"></div>
@@ -1550,6 +1637,7 @@
               target="_blank"
               class="socials__social-icon"
               title="GitHub"
+              aria-label="My GitHub Page"
               ><i class="bx bxl-github"></i
             ></a>
             <a
@@ -1557,6 +1645,7 @@
               target="_blank"
               class="socials__social-icon"
               title="LinkedIn"
+              aria-label="My LinkedIn Page"
               ><i class="bx bxl-linkedin-square"></i
             ></a>
             <a
@@ -1564,6 +1653,7 @@
               target="_blank"
               class="socials__social-icon"
               title="Gmail"
+              aria-label="Personal Email ID (Gmail)"
               ><i class="bx bx-envelope"></i
             ></a>
             <a
@@ -1571,6 +1661,7 @@
               target="_blank"
               class="socials__social-icon"
               title="Repl.it"
+              aria-label="My Replit Page"
               ><i class="bx bxs-terminal"></i
             ></a>
           </div>

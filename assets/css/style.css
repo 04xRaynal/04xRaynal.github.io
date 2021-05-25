@@ -662,12 +662,10 @@ img {
     flex-direction: column;
     height: 100%;
     padding: 1.5rem 1.5rem 0.5rem 1.5rem;
-    /* padding-bottom: 0.5rem; */
 }
 
 .portfolio__title {
     font-size: 1.35rem;
-    /* font-weight: 550; */
     color: var(--first-color);
     margin: var(--mb-1) 0;
 }
@@ -675,7 +673,6 @@ img {
 .portfolio__subtitle {
     display: block;
     font-size: var(--normal-font-size);
-    /* color: var(--first-color-light); */
     padding: 0.5rem 0 1rem;
 }
 
@@ -689,19 +686,12 @@ img {
 
 .portfolio__button-wrapper {
     display: grid;
-    /* column-width: 2rem; */
     justify-items: center;
     grid-template-columns: 30% 10% 20% 10% 30%;
     grid-template-rows: 60% 15% 25%;
     margin-top: auto;
     margin-bottom: 0.5rem;
 }
-
-/* .view-wrapper, .play-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
 
 .portfolio__button-github-icon {
     grid-column: 2;
@@ -724,10 +714,8 @@ img {
 }
 
 .portfolio__button{
-    /* position: absolute; */
     background: none;
     color: var(--first-color);
-    /* padding: 0; */
     font-size: 3.5rem;
 }
 
@@ -736,7 +724,6 @@ img {
 }
 
 .portfolio__button-text {
-    /* position: ; */
     font-size: 0.8rem;
     font-weight: var(--font-semi-bold);
 }
