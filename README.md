@@ -6,10 +6,6 @@
 
 ---
 
-## Visit the site at: [Personal Portfolio](04xraynal.github.io)
-
----
-
 Screenshots attached below:
 
 Desktop View:
